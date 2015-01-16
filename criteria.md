@@ -43,7 +43,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					</li>
 				</ol>
 			</li>
-			<li>_Backup_
+			<li><em>Backup</em>
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
@@ -64,87 +64,209 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 			</li>
 		</ol>
 	</li>
+	<li><strong>Change Addresses</strong>
+		<ol type="A">
+			<li><em>Generation</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required to deviate from the default change functionality and receive change at a newly generated address.</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>The position of the change output(s) in the transaction is random?</li>
+							<li>The size and number of change outputs is chosen to make the change outputs resemble the desired spend?</li>
+							<li>Some change output values are intentionally set to “round numbers” (a.k.a low number of significant digits)?</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Change addresses are hidden from the normal receiving workflow by default to discourage using them as receiving addresses?</li>
+							<li>Preemptively indicates a loss of privacy when user elects to reuse change addresses as receiving addresses?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Backup</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks to backup a newly-generated change address from an existing wallet (worst case), apart from the sending workflow.</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Backups can occur offline, or are encrypted client-side with data that only the user controls e.g. password?</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Indicates a reduction in wallet safety when change address backups are stale?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li><strong>Sender Privacy vs Blockchain Observers</strong>
+		<ol type="A">
+			<li><em>Mixing</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required by user for inputs/outputs to be mixed with one or more other users</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Average number of other users whose funds are mixed with yours when sending through a mixing process</li>
+							<li>Mixing is secure against correlation attacks by the facilitator</li>
+							<li>Mixing is secure against theft of funds</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Warns the user when a proposed mix is easy to reverse?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Address Reuse</em>
+				<ol type="1">
+					<li>Feedback:
+						<ol type="a">
+							<li>Warns user when sending to an address that the user has sent to before?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Input Merging</em>
+				<ol type="1">
+					<li>Feedback:
+						<ol type="a">
+							<li>Outside of a mixing transaction, preemptively indicates a loss of privacy when merging inputs from different addresses in the same transaction?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Identity Separation</em>
+				<ol type="1">
+					<li>Quality:
+						<ol type="a">
+							<li>Avoids creating transactions which contain inputs from different identity containers, except optionally if the user has intentionally overridden this behavior?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li><strong>Receiver Privacy</strong>
+		<ol type="A">
+			<li><em>ECDH Address Support</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required by user to generate a ECDH receiving address, from the default window/authenticated home page.</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Receiver Identity</em>
+				<ol type="1">
+					<li>Quality:
+						<ol type="a">
+							<li>Wallet avoids leaking information about recipients via an external identity lookup?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+	<li><strong>Sender Privacy vs Network Observers</strong>
+		<ol type="A">
+			<li><em>Balance Information</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required by user to connect to the source of balance information through an anonymizing network</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Is balance information obtained in a manner which avoids leaking the addresses in a wallet to network peers?
+								<ul>
+									<li>100: Full node - the wallet is part of, or works with, a full node under the user’s exclusive control</li>
+									<li>75: Private SPV - address filters are used, but filters are never updated and when a new one is require it is registered with a brand new peer</li>
+									<li>50: Non-private SPV - address filters are used, and they are updated or reuse peers.</li>
+									<li>0: Non-private - Balance is obtained from a peer which can easily connect wallet addresses to a specific connection/wallet</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Client provides a visual indication if the balance information is not being obtained through an anonymizing network, including IP address information</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Outgoing Transactions</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required by user to route outgoing transactions through an anonymizing network</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Are outgoing transactions routed through a different entry point into the network than the source of balance information?</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Client provides a visual indication if outgoing transactions are not being routed through an anonymizing network, including IP address information</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Identity Separation</em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks to import a seed or wallet file into the client.</li>
+							<li>Number of clicks to assign an imported address to an identity container</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Avoids including addresses from multiple identity containers in the same address filter?</li>
+							<li>Avoids broadcasting outgoing transactions from different identity containers via the same network access path?</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Visually indicates to user when inputs from different accounts/pockets are merged before the transaction is broadcast.</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li><em>Operating System Support </em>
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Compatible with latest version of Tails?
+								<ul>
+									<li>100: Actually included in the Tails live cd</li>
+									<li>75: Program and any dependencies are packaged into a single file which can be easily installed</li>
+									<li>50: Installation is possible, but requires multiple complex steps</li>
+									<li>0: WIll not run on Tails</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
 </ol>
-
-
-
-
-II. Change Addresses
-  A. Generation
-    1. Usability:
-      a) Number of clicks required to deviate from the default change functionality and receive change at a newly generated address.
-    2. Quality:
-      a) The position of the change output(s) in the transaction is random?
-      b) The size and number of change outputs is chosen to make the change outputs resemble the desired spend?
-      c) Some change output values are intentionally set to “round numbers” (a.k.a low number of significant digits)?
-    3. Feedback:
-      a) Change addresses are hidden from the normal receiving workflow by default to discourage using them as receiving addresses?
-      b) Preemptively indicates a loss of privacy when user elects to reuse change addresses as receiving addresses?
-  B. Backup
-    1. Usability:
-	  a) Number of clicks to backup a newly-generated change address from an existing wallet (worst case), apart from the sending workflow.
-    2. Quality:
-      a) Backups can occur offline, or are encrypted client-side with data that only the user controls e.g. password?
-    3. Feedback:
-      a) Indicates a reduction in wallet safety when change address backups are stale?
-III. Sender Privacy vs Blockchain Observers
-  A. Mixing
-    1. Usability:
-      a) Number of clicks required by user for inputs/outputs to be mixed with one or more other users
-    2. Quality:
-      a) Average number of other users whose funds are mixed with yours when sending through a mixing process
-      b) Mixing is secure against correlation attacks by the facilitator
-      c) Mixing is secure against theft of funds
-    3. Feedback:
-	  a) Warns the user when a proposed mix is easy to reverse?
-  B. Address Reuse 
-    1. Feedback:
-	  a) Warns user when sending to an address that the user has sent to before?
-  C. Input Merging 
-    1. Feedback:
-	  a) Outside of a mixing transaction, preemptively indicates a loss of privacy when merging inputs from different addresses in the same transaction?
-  D. Identity Separation
-    1. Quality:
-      a) Avoids creating transactions which contain inputs from different identity containers, except optionally if the user has intentionally overridden this behavior?
-IV. Receiver Privacy
-  A. ECDH Address Support
-    1. Usability:
-	  a) Number of clicks required by user to generate a ECDH receiving address, from the default window/authenticated home page.
-  B. Receiver Identity 
-    1. Quality:
-	  a) Wallet avoids leaking information about recipients via an external identity lookup?
-V. Sender Privacy vs Network Observers
-  A. Balance Information 
-    1. Usability:
-      a) Number of clicks required by user to connect to the source of balance information through an anonymizing network
-    2. Quality:
-	  a) Is balance information obtained in a manner which avoids leaking the addresses in a wallet to network peers?
-        (1) 100: Full node - the wallet is part of, or works with, a full node under the user’s exclusive control
-        (2) 75: Private SPV - address filters are used, but filters are never updated and when a new one is require it is registered with a brand new peer
-        (3) 50: Non-private SPV - address filters are used, and they are updated or reuse peers.
-        (4) 0: Non-private - Balance is obtained from a peer which can easily connect wallet addresses to a specific connection/wallet
-    3. Feedback:
-      a) Client provides a visual indication if the balance information is not being obtained through an anonymizing network, including IP address information
-  B. Outgoing Transactions 
-    1. Usability:
-      a) Number of clicks required by user to route outgoing transactions through an anonymizing network
-    2. Quality:
-      a) Are outgoing transactions routed through a different entry point into the network than the source of balance information?
-    3. Feedback:
-      a) Client provides a visual indication if outgoing transactions are not being routed through an anonymizing network, including IP address information
-  C. Identity Separation 
-    1. Usability:
-      a) Number of clicks to import a seed or wallet file into the client.
-      b) Number of clicks to assign an imported address to an identity container
-    2. Quality:
-      a) Avoids including addresses from multiple identity containers in the same address filter?
-      b) Avoids broadcasting outgoing transactions from different identity containers via the same network access path?
-    3. Feedback:
-      a) Visually indicates to user when inputs from different accounts/pockets are merged before the transaction is broadcast.
-  D. Operating System Support 
-    1. Usability:
-      a) Compatible with latest version of Tails?
-        (1) 100: Actually included in the Tails live cd
-        (2) 75: Program and any dependencies are packaged into a single file which can be easily installed
-        (3) 50: Installation is possible, but requires multiple complex steps
-        (4) 0: WIll not run on Tails
