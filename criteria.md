@@ -8,9 +8,9 @@ Kristov Atlas, Justus Ranvier, Chris Pacia, Samuel Patterson
 
 ## Contact
 
-w: http://www.openbitcoinprivacyproject.org/connect/
-e: contact [at] openbitcoinprivacyproject [dot] org
-t: @obpp_org
+* w: http://www.openbitcoinprivacyproject.org/connect/
+* e: contact [at] openbitcoinprivacyproject [dot] org
+* t: @obpp_org
 
 ## Description
 
