@@ -29,7 +29,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 	<li><strong>Receiving Addresses</strong>
 		<ol type="A">
 			<li><em>Generation</em>
-				<ol type="1">
+				<ol>
 					<li>Usability:
 						<ol type="a">
 							<li>Number of clicks required to deviate from the default receiving functionality and generate a new receiving address for an existing wallet.</li>
