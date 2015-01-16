@@ -25,9 +25,9 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 ## Criteria
 
 <ol type="I">
-	<li>**Receiving Addresses**
+	<li>__Receiving Addresses__
 		<ol type="A">
-			<li>*Generation*
+			<li>_Generation_
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
@@ -42,7 +42,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					</li>
 				</ol>
 			</li>
-			<li>*Backup*
+			<li>_Backup_
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
