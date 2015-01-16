@@ -24,10 +24,22 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 
 ## Criteria
 
-I. Receiving Addresses
-  A. Generation
-    1. Usability:
-      a) Number of clicks required to deviate from the default receiving functionality and generate a new receiving address for an existing wallet.
+<ol type="I">
+	<li>Receiving Addresses
+		<ol type="A">
+			<li>Generation
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks required to deviate from the default receiving functionality and generate a new receiving address for an existing wallet.</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+	</li>
+</ol>
+						
     2. Feedback:
       a) Receiving addresses are hidden from the default view once they have been used?
 	  b) Preemptively indicates a loss of privacy when user elects to receive funds at a previously-used addresses?
