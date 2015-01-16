@@ -25,13 +25,38 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 ## Criteria
 
 <ol type="I">
-	<li>Receiving Addresses
+	<li>**Receiving Addresses**
 		<ol type="A">
-			<li>Generation
+			<li>*Generation*
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
 							<li>Number of clicks required to deviate from the default receiving functionality and generate a new receiving address for an existing wallet.</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Receiving addresses are hidden from the default view once they have been used?</li>
+							<li>Preemptively indicates a loss of privacy when user elects to receive funds at a previously-used addresses?</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+			<li>*Backup*
+				<ol type="1">
+					<li>Usability:
+						<ol type="a">
+							<li>Number of clicks to backup a newly-generated receiving address from an existing wallet (worst case), from the default window/authenticated home page.</li>
+						</ol>
+					</li>
+					<li>Quality:
+						<ol type="a">
+							<li>Does the backup process leak information about wallet addresses (e.g. each time a new change address is created on-demand, an email backup is triggered immediately)?</li>
+						</ol>
+					</li>
+					<li>Feedback:
+						<ol type="a">
+							<li>Indicates a reduction in wallet safety when receiving address backups are stale?</li>
 						</ol>
 					</li>
 				</ol>
@@ -39,17 +64,10 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 		</ol>
 	</li>
 </ol>
-						
-    2. Feedback:
-      a) Receiving addresses are hidden from the default view once they have been used?
-	  b) Preemptively indicates a loss of privacy when user elects to receive funds at a previously-used addresses?
-  B. Backup
-    1. Usability:
-      a) Number of clicks to backup a newly-generated receiving address from an existing wallet (worst case), from the default window/authenticated home page.
-    2. Quality:
-      a) Does the backup process leak information about wallet addresses (e.g. each time a new change address is created on-demand, an email backup is triggered immediately)?
-    3. Feedback:
-      a) Indicates a reduction in wallet safety when receiving address backups are stale?
+
+
+
+
 II. Change Addresses
   A. Generation
     1. Usability:
