@@ -117,6 +117,9 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 						<ol type="a">
 							<li>Number of clicks required by user for inputs/outputs to be mixed with one or more other users</li>
 						</ol>
+						<ol type="b">
+							<li>Average speed of time between transaction submission and transaction broadcasting.</li>
+						</ol>
 					</li>
 					<li>Quality:
 						<ol type="a">
