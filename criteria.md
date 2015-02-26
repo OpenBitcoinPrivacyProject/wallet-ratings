@@ -76,7 +76,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					<li>Quality:
 						<ol type="a">
 							<li>The position of the change output(s) in the transaction is random?</li>
-							<li>The size and number of change outputs is chosen to make the change outputs resemble the desired spend?</li>
+							<li>One or more change outputs are created which are close to the value of the desired spend?</li>
 							<li>Some change output values are intentionally set to “round numbers” (a.k.a low number of significant digits)?</li>
 						</ol>
 					</li>
@@ -143,6 +143,11 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 			</li>
 			<li><em>Input Merging</em>
 				<ol type="1">
+					<li>Quality:
+						<ol type="a">
+							<li>When an outgoing transaction must merge inputs, and when mixing is not being used, is the transaction constructed in a way that plausibly resembles a mixing transaction?</li>
+						</ol>
+					</li>
 					<li>Feedback:
 						<ol type="a">
 							<li>Outside of a mixing transaction, preemptively indicates a loss of privacy when merging inputs from different addresses in the same transaction?</li>
