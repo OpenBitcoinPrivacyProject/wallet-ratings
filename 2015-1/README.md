@@ -25,3 +25,19 @@ This information is broken down into several documents:
 1. [Criteria](criteria.md) describes the particular tests used to measure how well a wallet implements an identified countermeasure.
 1. [Methodology](methodology.md) descibes how the results of each test is converted into a numeric score
 1. [Weighting](weights.wiki) descibes how the relative importance of each test is determined.
+
+## Credits
+
+The following individuals participated in the creation of the threat model and associated criteria for the 2015-1 rating exercise:
+
+* Chris Pacia
+* Justus Ranvier
+* Kristov Atlas
+* Samuel Patterson
+
+The following individuals participated in the wallet rating process:
+
+* Daniel Krawisz
+* Justus Ranvier
+* Kristov Atlas
+* Michael Goldstien
