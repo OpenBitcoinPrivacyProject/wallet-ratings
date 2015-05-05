@@ -35,7 +35,7 @@ This information is broken down into several documents:
 * [Blockchain (Android)](wallets/blockchain-android.md)
 * [Blockchain (Web)](wallets/blockchain-web.md)
 * [Coinbase](wallets/coinbase.md)
-* Dark Wallet
+* [Darkwallet](wallets/darkwallet.md)
 * Electrum
 * Multibit Classic
 * Mycelium

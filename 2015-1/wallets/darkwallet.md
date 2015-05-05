@@ -27,13 +27,15 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Bitcoin Wallet by Andreas Schildbach is the oldest mobile Bitcoin wallet in use. Development started in March of 2011. As the first mobile wallet to gain widespread use, it has served as a de facto reference implementation for Android bitcoin wallets.
+Darkwallet is the first Bitcoin wallet explicitly devoted to privacy as a primary design goal, created by Amir Taaki and Cody Wilson. Darkwallet in the only wallet in our group which includes automatic CoinJoin mixing and ECDH Stealth Addresses. Another notable feature in Darkwallet is an automatic P2P network for messaging between users.
 
-Bitcoin Wallet holds up well in terms of privacy features compared to more feature-rich wallets due to its simple interface. Bitcoin Wallet provides a simple interface that doesn’t allow users to perform privacy-reducing actions like reusing addresses for receiving funds. Multiple account support is Bitcoin Wallet’s single largest missing feature compared to its mobile competition.
+As demonstrated by its score, Darkwallet is generally successful in its attempts to avoid privacy pitfalls. Some of the weaknesses include a reliance on third party Obelisk servers which have the ability to deanonymize users; theoretically users could run their own Obelisk server, but we consider this to be beyond the capabilities of most potential Darkwallet users. Another factor that makes Darkwallet weaker than it could be is its relatively small user base, which makes CoinJoin unlikely to find a partner for on-demand mixing.
 
-##Questionnaire Response##
+The future of Darkwallet is currently uncertain, as it has not yet reached its release milestone and no development activity has occurred since February 20th.
 
-The developers of Bitcoin Wallet did not respond to the OBPP questionnaire.
+##Questionnaire Response ##
+
+The developers of Darkwallet did not respond to the OBPP questionnaire.
 
 ##Question Scores##
 
@@ -113,4 +115,3 @@ The developers of Bitcoin Wallet did not respond to the OBPP questionnaire.
     <dt>V D 1 a)</dt>
     <dd></dd>
 </dl>
-

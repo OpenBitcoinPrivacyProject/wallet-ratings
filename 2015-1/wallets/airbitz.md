@@ -88,19 +88,19 @@ Airbitz's responses are listed in bold.
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
     
-    **No**
+**No**
     
     * Any of the above with a public IP address
     
-    **Yes**
+**Yes**
     
     * Any of the above with a registered account 
     
-    **No**
+**No**
     
     * Any of the above with a persistent software or hardware fingerprint
     
-    **No**
+**No**
     
 7: If your application obtains balance information by uploading a filter to network peers:
 
@@ -195,4 +195,3 @@ Airbitz's responses are listed in bold.
     <dt>V D 1 a)</dt>
     <dd></dd>
 </dl>
-
