@@ -36,7 +36,7 @@ This information is broken down into several documents:
 * [Blockchain (Web)](wallets/blockchain-web.md)
 * [Coinbase](wallets/coinbase.md)
 * [Darkwallet](wallets/darkwallet.md)
-* Electrum
+* [Electrum](wallets/electrum.md)
 * Multibit Classic
 * Mycelium
 
