@@ -9,7 +9,7 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Type</dt>
     <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>0.93.1</dd>
     <dt>Score</dt>
     <dd>
         <dl>

@@ -9,7 +9,7 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Type</dt>
     <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd><1.4.6 (android)/dd>
+    <dd>1.4.6 (android)</dd>
     <dt>Score</dt>
     <dd>
         <dl>

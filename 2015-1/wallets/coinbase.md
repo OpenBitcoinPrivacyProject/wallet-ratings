@@ -9,7 +9,7 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Type</dt>
     <dd>Pseudo-wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>March 2015 production website</dd>
     <dt>Score</dt>
     <dd>
         <dl>
