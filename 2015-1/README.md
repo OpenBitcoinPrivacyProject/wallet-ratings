@@ -31,7 +31,7 @@ This information is broken down into several documents:
 
 * [Airbitz](wallets/airbitz.md)
 * [Armory](wallets/armory.md)
-* Bitcoin Wallet
+* [Bitcoin Wallet](wallets/bitcoinwallet.md)
 * Blockchain (Android)
 * Blockchain (Web)
 * Coinbase
