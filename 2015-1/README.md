@@ -29,7 +29,7 @@ This information is broken down into several documents:
 
 ## Results
 
-* Airbitz
+* [Airbitz](wallets/airbitz.md)
 * Armory
 * Bitcoin Wallet
 * Blockchain (Android)
