@@ -1,3 +1,7 @@
+=Bitcoin Wallet Privacy Threat Model=
+
+This document outlines the OBPP threat model used to develop [[criteria.md|criteria]] for measuring the privacy strength of Bitcoin wallets.
+
 {|
 |-
 !colspan="4"|Attacks
