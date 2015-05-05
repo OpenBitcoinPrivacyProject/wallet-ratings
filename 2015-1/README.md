@@ -24,3 +24,4 @@ This information is broken down into several documents:
 1. [Threat model](threat model.wiki) describes the attackers, attacks, and countermeasures used to develop the rating criteria
 1. [Criteria](criteria.md) describes the particular tests used to measure how well a wallet implements an identified countermeasure.
 1. [Methodology](methodology.md) descibes how the results of each test is converted into a numeric score
+1. [Weighting](weights.wiki) descibes how the relative importance of each test is determined.

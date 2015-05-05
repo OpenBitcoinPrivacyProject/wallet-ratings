@@ -1,0 +1,340 @@
+=Bitcoin Wallet Privacy Criteria Weighting=
+
+This document outlines the OBPP criteria rating method.
+
+1. Each category is assigned a score representing its relative importance compared to other categories.
+1. Each sub-category (quality, usability, and feedback) is assigned a score representing its relative importance compared to other sub-categories in the same category.
+1. Each question is assigned a score representing its relative importance compared to other questions in the same sub-category.
+
+The final score for each question is the product of the three percentages listed above.
+
+{|
+|-
+!colspan="3"|Category weights
+|-
+!Category
+!Name
+!Weight
+|-
+|I A
+|Receiving Address Generation
+|16.17%
+|-
+|I B
+|Receiving Address Backup
+|3.89%
+|-
+|II A
+|Change Address Generation
+|16.17
+|-
+|II B
+|Change Address Backup
+|3.89%
+|-
+|III A
+|Mixing
+|6.67%
+|-
+|III B
+|Address Reuse
+|3.89
+|-
+|III C
+|Input Merging
+|5.56%
+|-
+|III D
+|Identity Seperation
+|6.67%
+|-
+|IV A
+|ECDH Address Support
+|5.56%
+|-
+|IV B
+|Receiver Identity
+|5.56%
+|-
+|V A
+|Balance Information
+|11.11%
+|-
+|V B
+|Outgoing Transaction Routing
+|5.56%
+|-
+|V C
+|Identity Seperation
+|5.56%
+|-
+|V D
+|Tails Support
+| 2.78%
+|}
+
+{|
+|-
+!colspan="3"|Sub-Category weights
+|-
+!Category
+!Sub-Category
+!Weight
+|-
+|rowspan="2"|I A
+|Usability
+|53.33%
+|-
+|Feedback
+|46.67%
+|-
+|rowspan="3"|I B
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|rowspan="3"|II A
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|rowspan="3"|II B
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|rowspan="3"|III A
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|III B
+|Feedback
+|100%
+|-
+|rowspan="2"|III C
+|Quality
+|60%
+|-
+|Feedback
+|40%
+|-
+|III D
+|Quality
+|100%
+|-
+|IV A
+|Usability
+|100%
+|-
+|IV B
+|Quality
+|100%
+|-
+|rowspan="3"|V A
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|rowspan="3"|V B
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|rowspan="3"|V C
+|Usability
+|35.71%
+|-
+|Quality
+|35.71%
+|-
+|Feedback
+|28.57%
+|-
+|V D
+|Usability
+|100%
+|}
+
+{|
+|-
+!colspan="3"|Question weights
+|-
+!Sub-Category
+!Item
+!Weight
+|-
+|I A 1
+|a
+|100%
+|-
+|rowspan="2"|I A 2
+|a
+|40%
+|-
+|b
+|60%
+|-
+|I B 1
+|a
+|100%
+|-
+|I B 2
+|a
+|100%
+|-
+|1 B 3
+|a
+|100%
+|-
+|II A 1
+|a
+|100%
+|-
+|rowspan="3"|II A 2
+|a
+|50%
+|-
+|b
+|33.33%
+|-
+|c
+|16.67%
+|-
+|rowspan="2"|II A 3
+|a
+|40%
+|-
+|b
+|60%
+|-
+|II B 1
+|a
+|100%
+|-
+|II B 2
+|a
+|100%
+|-
+|II B 3
+|a
+|100%
+|-
+|III A 1
+|a
+|100%
+|-
+|rowspan="3"|III A 2
+|a
+|33.33%
+|-
+|b
+|33.33%
+|-
+|c
+|33.33%
+|-
+|III A 3
+|a
+|100%
+|-
+|III B 1
+|a
+|100%
+|-
+|III C 1
+|a
+|100%
+|-
+|III C 2
+|a
+|100%
+|-
+|III D 1
+|a
+|100%
+|-
+|IV A 1
+|a
+|100%
+|-
+|IV B 1
+|a
+|100%
+|-
+|V A 1
+|a
+|100%
+|-
+|V A 2
+|a
+|100%
+|-
+|V A 3
+|a
+|100%
+|-
+|V B 1
+|a
+|100%
+|-
+|V B 2
+|a
+|100%
+|-
+|V B 3
+|a
+|100%
+|-
+|rowspan="2"|V C 1
+|a
+|66.67%
+|-
+|b
+|33.33%
+|-
+|rowspan="2"|V C 2
+|a
+|50%
+|-
+|b
+|50%
+|-
+|V C 3
+|a
+|100%
+|-
+|V D 1
+|a
+|100%
+|}
