@@ -1,0 +1,105 @@
+{|
+|-
+!colspan="4"|Attacks
+|-
+!Attacker
+!Attack
+!Countermeasure
+!Relevant Tests
+|-
+|rowspan="7"|Blockchain observer
+|Link transactions to a single entity based on all of them containing inputs with a common address
+|Avoid address reuse
+|I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
+|-
+|rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
+|Randomize the position of the change output(s) in the output list
+|II A 2 a
+|-
+|Select inputs such that the amount of change in the transaction is close to the size of the desired spend
+|II A 2 b
+|-
+|Use multiple change outputs, and intentionally set the value of some outputs to values that resemble plausible spends
+|II A 2 c
+|-
+|rowspan="2"|Link outputs to a single entity based on them all being included as inputs in the same transaction
+|Avoid using inputs from different addresses in the same transaction
+|III C 2 a
+|-
+|Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
+|III A 1 a, III A 2 a, III A 3 a, III C 1 a
+|-
+|Link identities by observing that addresses associated with both identities are used as inputs in the same transaction
+|Avoid constructing transactions that contain inputs from more than one identity/account
+|V C 3 a
+|-
+|rowspan="9"|Network peer
+|rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
+|Avoid leaking information about user behavior via observable network traffic
+|1 B 2 a
+|-
+|Avoid leaking information about recipients in transaction via an external network lookup
+|IV B 1 a
+|-
+|Link addresses to a user by observing their backup files
+|Use strictly local wallet backups, or encrypt remote wallet backups
+|II B 2 a
+|-
+|Link addresses belonging to a single user by observing the pattern of their balance lookup requests (bloom/prefix filters or direct query)
+|Connect to the source of balance information in a manner that does not leak the IP address of the requestor
+|V A 1 a, V A 3 a
+|-
+|Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
+|If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
+|V A 2 a
+|-
+|Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
+|Route outgoing transactions through a different route than through the peer which is providing balance information
+|V B 2 a
+|-
+|Link addresses to an IP address by observing the inputs of outgoing transactions sent by a client
+|Route outgoing transactions via a method that does not reveal the IP address of the sender
+|V B 1 a, V B 3 a
+|-
+|Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
+|Use seperate filters, provided to different peers, for each identity
+|V C 2 a
+|-
+|Link different identities by observing that the same IP address is sending outgoing transactions associated with multiple identities
+|Use seperate routes for outgoing transactions associated with each identity
+|V C 2 b
+|-
+|rowspan="2"|Transaction participant
+|Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
+|Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
+|III D 1 a, V C 1 a, V C 1 b
+|-
+|Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
+|Use mixing protocols which are secure against misbehavior by any participant
+|III A 2 b
+|-
+!colspan="4"|Meta Attacks
+|-
+!colspan="2"|Meta attack
+!Countermeasure
+!Relevant Tests
+|-
+|rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
+|Use eternal backups
+|I B 3 a, II B 1 a, II B 3 a
+|-
+|Proactively inform users when backups require an update
+|I B 3 a, II B 1 a, II B 3 a
+|-
+|colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
+|Use mixing methods that do not allow for theft of funds
+|III A 2 c
+|-
+|colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
+|Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
+|IV A 1 a
+|-
+|colspan="2"|The difficulty of setting up Tor on differnet operating systems may be a barrier to using wallet privacy features      
+|Create wallets that are easily usable on operating systems with built-in Tor support
+|V D 1 a
+|}
