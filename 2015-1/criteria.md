@@ -1,23 +1,7 @@
 Bitcoin Wallet Privacy Ratings Criteria
 =======================================
 
-## Authors
-
-Open Bitcoin Privacy Project (OBPP) 2015
-
-Kristov Atlas, Justus Ranvier, Chris Pacia, Samuel Patterson
-
-## Contact
-
-* w: http://www.openbitcoinprivacyproject.org/connect/
-* e: contact [at] openbitcoinprivacyproject [dot] org
-* t: [@obpp_org](https://twitter.com/obpp_org)
-
-## Description
-
-Version 0.1 (Request for Public Comment)
-
-This document outlines the OBPP criteria for rating the privacy strength of Bitcoin wallets. A separate document will describe the relative importance of each criterion and how per-wallet scores are calculated. 
+This document outlines the OBPP criteria for rating the privacy strength of Bitcoin wallets. Each item represents an objectively-measurable test of how well a rated wallet implements countermeasures for the attacks identified in the [threat model](threat model.wiki). The result of each test is converted into a numeric score via a method decribed below or in the [methodology](methodology.md).
 
 Our metrics are based on feature completeness and user experience. To evaluate user experience, we utilize a "minimum number of clicks to perform action" metric. This metric is easily standardized between wallets, minimizes subjectivity, and can be measured by a single tester.
 
