@@ -33,7 +33,7 @@ To improve its privacy, Armory must enable its users to use some mixing protocol
 
 ##Questionnaire Response ##
 
-Airbitz's responses are listed in bold.
+Armory's responses are listed in bold.
 
 1: Please classify your application as one of the three categories:
   * Wallet: all of the private keys needed to create a blockchain transaction are under the exclusive control of the user

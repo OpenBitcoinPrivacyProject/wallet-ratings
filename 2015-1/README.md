@@ -32,8 +32,8 @@ This information is broken down into several documents:
 * [Airbitz](wallets/airbitz.md)
 * [Armory](wallets/armory.md)
 * [Bitcoin Wallet](wallets/bitcoinwallet.md)
-* Blockchain (Android)
-* Blockchain (Web)
+* [Blockchain (Android)](wallets/blockchain-android.md)
+* [Blockchain (Web)](wallets/blockchain-web.md)
 * Coinbase
 * Dark Wallet
 * Electrum
