@@ -57,7 +57,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					</li>
 					<li>Feedback:
 						<ol type="a">
-							<li>Indicates a reduction in wallet safety when receiving address backups are stale?</li>
+							<li>Indicates a reduction in wallet safety when receiving address backups are stale, or uses eternal backups?</li>
 						</ol>
 					</li>
 				</ol>
@@ -102,7 +102,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					</li>
 					<li>Feedback:
 						<ol type="a">
-							<li>Indicates a reduction in wallet safety when change address backups are stale?</li>
+							<li>Indicates a reduction in wallet safety when change address backups are stale, or uses eternal backups?</li>
 						</ol>
 					</li>
 				</ol>
@@ -194,7 +194,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
-							<li>Number of clicks required by user to connect to the source of balance information through an anonymizing network</li>
+							<li>Number of clicks required by user to connect to the source of balance information without leaking their identity over the network</li>
 						</ol>
 					</li>
 					<li>Quality:
@@ -202,9 +202,9 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 							<li>Is balance information obtained in a manner which avoids leaking the addresses in a wallet to network peers?
 								<ul>
 									<li>100: Full node - the wallet is part of, or works with, a full node under the user’s exclusive control</li>
-									<li>75: Private SPV - address filters are used, but filters are never updated and when a new one is require it is registered with a brand new peer</li>
-									<li>50: Non-private SPV - address filters are used, and they are updated or reuse peers.</li>
-									<li>0: Non-private - Balance is obtained from a peer which can easily connect wallet addresses to a specific connection/wallet</li>
+									<li>75: Carefully filtered - address filters are used, but filters are never updated and when a new one is require it is registered with a brand new peer</li>
+									<li>50: Unsafely filtered - address filters are used, and they are updated or reuse peers.</li>
+									<li>0: Unfiltered - Balance is obtained from a peer which can easily connect wallet addresses to a specific connection/wallet</li>
 								</ul>
 							</li>
 						</ol>
@@ -239,7 +239,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
-							<li>Number of clicks to import a seed or wallet file into the client.</li>
+							<li>Number of clicks to create a new identity container.</li>
 							<li>Number of clicks to assign an imported address to an identity container</li>
 						</ol>
 					</li>
@@ -251,7 +251,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					</li>
 					<li>Feedback:
 						<ol type="a">
-							<li>Visually indicates to user when inputs from different accounts/pockets are merged before the transaction is broadcast.</li>
+							<li>Visually indicates to user when inputs from different accounts/pockets are merged before the transaction is broadcast, or prohibits this operation entirely.</li>
 						</ol>
 					</li>
 				</ol>
@@ -275,3 +275,4 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 		</ol>
 	</li>
 </ol>
+
