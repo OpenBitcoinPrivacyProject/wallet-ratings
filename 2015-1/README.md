@@ -26,6 +26,19 @@ This information is broken down into several documents:
 1. [Methodology](methodology.md) descibes how the results of each test is converted into a numeric score
 1. [Weighting](weights.wiki) descibes how the relative importance of each test is determined.
 
+## Results
+
+* Airbitz
+* Armory
+* Bitcoin Wallet
+* Blockchain (Android)
+* Blockchain (Web)
+* Coinbase
+* Dark Wallet
+* Electrum
+* Multibit Classic
+* Mycelium
+
 ## Credits
 
 The following individuals participated in the creation of the threat model and associated criteria for the 2015-1 rating exercise:
