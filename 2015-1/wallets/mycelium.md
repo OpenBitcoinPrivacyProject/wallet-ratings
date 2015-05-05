@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Mycelium</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
+    <dt>Tested Version</dt>
     <dd>2.2.0 (android)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Android, iOS</dd>
     <dt>Score</dt>
     <dd>
         <dl>

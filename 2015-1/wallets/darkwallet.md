@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Darkwallet</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
+    <dt>Tested Version</dt>
     <dd>0.8.0 (chrome plugin)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Google Chrome browser</dd>
     <dt>Score</dt>
     <dd>
         <dl>

@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Multibit Classic</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
+    <dt>Tested Version</dt>
     <dd>0.5.18 (linux)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Linux OSX Windows</dd>
     <dt>Score</dt>
     <dd>
         <dl>

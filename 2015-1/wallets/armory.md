@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Armory</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
-    <dd>0.93.1</dd>
+    <dt>Tested Version</dt>
+    <dd>0.93.1 (linux)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Linux OSX Windows</dd>
     <dt>Score</dt>
     <dd>
         <dl>

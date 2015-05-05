@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Blockchain</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
+    <dt>Tested Version</dt>
     <dd>4.0.20 (android)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Android, iOS, Web</dd>
     <dt>Score</dt>
     <dd>
         <dl>

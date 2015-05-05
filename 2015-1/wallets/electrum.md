@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Electrum</dd>
     <dt>Type</dt>
     <dd>Wallet</dd>
-    <dt>Version</dt>
-    <dd>2.0.3</dd>
+    <dt>Tested Version</dt>
+    <dd>2.0.3 (linux)</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Android, Linux, OSX, Windows</dd>
     <dt>Score</dt>
     <dd>
         <dl>

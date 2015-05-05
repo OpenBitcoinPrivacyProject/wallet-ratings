@@ -8,8 +8,10 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dd>Coinbase</dd>
     <dt>Type</dt>
     <dd>Pseudo-wallet</dd>
-    <dt>Version</dt>
+    <dt>Tested Version</dt>
     <dd>March 2015 production website</dd>
+    <dt>Supported Platforms</dt>
+    <dd>Android, Web</dd>
     <dt>Score</dt>
     <dd>
         <dl>
