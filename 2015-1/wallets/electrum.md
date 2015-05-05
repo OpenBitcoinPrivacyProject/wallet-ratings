@@ -29,7 +29,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
+Electrum is a cross-platform lightweight wallet that has been under active development since November 2011. This wallet uses a deterministic seed to generate all keys, backed up by a 12-word string. Electrum 2.0 now implements BIP32 for this. It does not download the block chain, but instead connects to decentralized Electrum servers for transaction and balance data. These connections can easily be made through Tor, and the privacy-focused Linux distro Tails includes it by default. Electrum can also do two-factor authentication and maintain the online wallet for hardware wallets such as Trezor.
 
+Because the Electrum client connects to servers for data, users sacrifice privacy and must rely on trust in the block chain information received. Servers can identify connections between addresses. While the GUI does not encourage address reuse in normal usage, it may confuse users' conceptual understanding of transactions and address balances.
 
 ##Questionnaire Response ##
 
