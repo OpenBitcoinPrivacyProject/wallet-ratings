@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Multibit Classic</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>0.5.18 (linux)</dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -79,9 +79,9 @@ Multibit's responses are listed in bold.
     * Any of the above with a public IP address
     * Any of the above with a registered account 
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **MultiBit Classic does not obtain balance info from other servers. It gets (bloom-filtered) tx information from Bitcoin Core nodes.**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
 
@@ -91,9 +91,9 @@ Multibit's responses are listed in bold.
 
 **It broadcasts on one Bitcoin Core node and listens on others yes.**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **MultiBit Classic does not support multiple identities.**
 
 ##Question Scores##

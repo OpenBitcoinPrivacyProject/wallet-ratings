@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Airbitz</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd><1.4.6 (android)/dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -80,41 +80,41 @@ Airbitz's responses are listed in bold.
 
   * Is it possible for a malicious participant in the mix to steal funds?
   * Is it possible for any participant in the mix to retain information which correlates outputs to their corresponding inputs?
-  
+ 
 6: If your application obtains balance information from dedicated servers:
 
 **No. Some Airbitz and some non-airbitz servers. All peer-to-peer open source servers**
 
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
-    
+
 **No**
-    
+
     * Any of the above with a public IP address
-    
+
 **Yes**
-    
+
     * Any of the above with a registered account 
-    
+
 **No**
-    
+
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **No**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
 
 **It does not. in pipeline via prefix queries**
 
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
-  
+
 8: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
 
 **Yes, sends and receives have different paths**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **Accounts have no links at all to balance and incoming/outgoing transactions.**
 
 ##Question Scores##

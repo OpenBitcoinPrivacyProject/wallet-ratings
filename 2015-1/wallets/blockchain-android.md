@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Blockchain</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>4.0.20 (android)</dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -52,7 +52,7 @@ Blockchain's responses are listed in bold.
 
 2: Does your application provide any type of visual warning to the user when events which may reduce their privacy or safety occur, such as:
   * Receiving funds to an address which has previously received incoming transactions
-  
+
 **Not currently.**
 
   * Backups have been invalidated by new receiving or change address creation
@@ -64,7 +64,7 @@ Blockchain's responses are listed in bold.
 **The web version of our wallet includes the SharedCoin feature, which is based on the CoinJoin protocol. Though not a perfect CoinJoin implementation, this feature was made resistant to sudoku analysis in early 2015. Users are alerted to the limitations of SharedCoin before using the service here: https://sharedcoin.com/ There are no specific visual indications that vary during use of SharedCoin to indicate the degree of privacy afforded.**
 
   * An outgoing transaction sends funds to a previously-used address
-  
+
 **Not currently**
 
   * An outgoing transaction links inputs from multiple addresses
@@ -120,7 +120,7 @@ Blockchain's responses are listed in bold.
 **No. All private keys are held by the users in browser and cannot be stolen by the server. Participants are unable to steal each other’s mixing funds due to the properties of the CoinJoin protocol that SharedCoin is based on.**
 
   * Is it possible for any participant in the mix to retain information which correlates outputs to their corresponding inputs?
-  
+
 **Mixing peers only retain information about their own inputs and outputs. The SharedCoin server has visibility over all inputs and outputs, and which peers they belong to. Future versions of SharedCoin may be cryptographically “blinded” to this information.**
 
 6: If your application obtains balance information from dedicated servers:
@@ -129,21 +129,21 @@ Blockchain's responses are listed in bold.
 
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
-    
+
 **All transactions are pushed through a single server. The server would be able to identify recurring addresses between several transactions. We avoid logging such data as much as possible.**
-    
+
     * Any of the above with a public IP address
-    
+
 **Our web server is required by design to see the user’s IP address. We avoid logging such data as much as possible, except for authorization purposes (See response to software fingerprinting below). We maintain an .onion address for Tor users who wish to keep their accounts dissociated from their public IP addresses.**
-    
+
     * Any of the above with a registered account 
-    
+
 **Lookups of the balance information for specific addresses come through the same server as the one used for logging into accounts. We avoid logging such data as much as possible.**
-    
+
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **Our web wallet server is capable of identifying browser fingerprints unless users take steps to randomize or standardize their fingerprint. We avoid logging such data as much as possible, though some fingerprint information is collected in order to prompt users for email authorization when they attempt to download their encrypted wallet file (login) on a new machine.**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
 
@@ -153,9 +153,9 @@ Blockchain's responses are listed in bold.
 
 **No, all data is sent through the same server.**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **Our wallet does not currently support accounts or identities.**
 
 ##Question Scores##

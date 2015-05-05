@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Bitcoin Wallet</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>4.19 (android)</dd>
     <dt>Score</dt>
     <dd>
         <dl>

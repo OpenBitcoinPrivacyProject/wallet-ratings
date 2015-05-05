@@ -5,9 +5,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Armory</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
     <dd></dd>
     <dt>Score</dt>
@@ -39,11 +39,11 @@ Armory's responses are listed in bold.
   * Wallet: all of the private keys needed to create a blockchain transaction are under the exclusive control of the user
 
 **Yes**
-  
+
   * Pseudo-wallet: none of the private keys needed to create a blockchain transaction are under the exclusive control of the user
 
 **No**
-  
+
   * Hybrid wallet: some portion of the private keys needed to create a blockchain transaction are under the exclusive control of the user
 
 **No**
@@ -52,31 +52,31 @@ Armory's responses are listed in bold.
   * Receiving funds to an address which has previously received incoming transactions
 
 **No, Could be implemented with ArmoryD**
-  
+
   * Backups have been invalidated by new receiving or change address creation
-  
+
 **Not applicable because Armory wallets use deterministic address generation**  
-  
+
   * If the wallet supports mixing, a proposed mixing transaction is easily reversible
-  
+
 **No, Could be implemented with ArmoryD**
-  
+
   * An outgoing transaction sends funds to a previously-used address
-  
+
 **No, Could be implemented with ArmoryD**
-  
+
   * An outgoing transaction links inputs from multiple addresses
-  
+
 **No, Could be implemented with ArmoryD**
-  
+
   * Network connectivity to peers or dedicated balance servers is not routed through an anonymous channel
-  
+
 **No**
-  
+
   * An outgoing transaction links inputs from multiple accounts/identities
 
 **Not applicable**
-  
+
 3: Does your application’s backup process involve any activity which may be visible to an external network observer?
 
 **Not necessarily, We have the ability "secure" print your backup from an offline computer. With secure print the user writes a code on the backup page. The written code would be necessary during restoration.**
@@ -102,21 +102,21 @@ Armory's responses are listed in bold.
     * Any of the above with a public IP address
     * Any of the above with a registered account 
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **Not applicable**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
-  
+
 **Not applicable**
 
 8: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
 
 **No**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **No**
 
 ##Question Scores##

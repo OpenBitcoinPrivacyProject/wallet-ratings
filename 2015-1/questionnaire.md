@@ -35,8 +35,5 @@ This questionnaire was sent to the developers of each of the wallets included in
 7. If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
 8. Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-9. Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-
-
-
+9. If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?

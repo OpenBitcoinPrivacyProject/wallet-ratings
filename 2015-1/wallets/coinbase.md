@@ -5,9 +5,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Coinbase</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Pseudo-wallet</dd>
     <dt>Version</dt>
     <dd></dd>
     <dt>Score</dt>
@@ -60,21 +60,21 @@ Coinbase's responses are listed in bold.
 5: If your application includes mixing functionality:
   * Is it possible for a malicious participant in the mix to steal funds?
   * Is it possible for any participant in the mix to retain information which correlates outputs to their corresponding inputs?
-  
+
 6: If your application obtains balance information from dedicated servers:
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
     * Any of the above with a public IP address
     * Any of the above with a registered account 
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
-  
+
 8: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
 
 **Thank you for contacting Coinbase support. We are not accepting survey questions at this time, and kindly decline your offer to be involved with your survey.  Thanks for your interest in Coinbase, best of luck.**
 

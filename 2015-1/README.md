@@ -5,8 +5,6 @@ Bitcoin Wallet Privacy Ratings - Spring 2015
 
 Open Bitcoin Privacy Project (OBPP) 2015
 
-Kristov Atlas, Justus Ranvier, Chris Pacia, Samuel Patterson
-
 ## Contact
 
 * w: http://www.openbitcoinprivacyproject.org/connect/

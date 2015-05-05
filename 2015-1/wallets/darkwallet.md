@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Darkwallet</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>0.8.0 (chrome plugin)</dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -31,7 +31,7 @@ Darkwallet is the first Bitcoin wallet explicitly devoted to privacy as a primar
 
 As demonstrated by its score, Darkwallet is generally successful in its attempts to avoid privacy pitfalls. Some of the weaknesses include a reliance on third party Obelisk servers which have the ability to deanonymize users; theoretically users could run their own Obelisk server, but we consider this to be beyond the capabilities of most potential Darkwallet users. Another factor that makes Darkwallet weaker than it could be is its relatively small user base, which makes CoinJoin unlikely to find a partner for on-demand mixing.
 
-The future of Darkwallet is currently uncertain, as it has not yet reached its release milestone and no development activity has occurred since February 20th.
+The future of Darkwallet is currently uncertain, as it has not yet reached its 1.0 release milestone and no development activity has occurred since February 20th.
 
 ##Questionnaire Response ##
 

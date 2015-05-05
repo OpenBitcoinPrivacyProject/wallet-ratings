@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Blockchain</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>March 2015 production website</dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -127,21 +127,21 @@ Blockchain's responses are listed in bold.
 
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
-    
+
 **All transactions are pushed through a single server. The server would be able to identify recurring addresses between several transactions. We avoid logging such data as much as possible.**
-    
+
     * Any of the above with a public IP address
-    
+
 **Our web server is required by design to see the user’s IP address. We avoid logging such data as much as possible, except for authorization purposes (See response to software fingerprinting below). We maintain an .onion address for Tor users who wish to keep their accounts dissociated from their public IP addresses.**
-    
+
     * Any of the above with a registered account 
-    
+
 **Lookups of the balance information for specific addresses come through the same server as the one used for logging into accounts. We avoid logging such data as much as possible.**
-    
+
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **Our web wallet server is capable of identifying browser fingerprints unless users take steps to randomize or standardize their fingerprint. We avoid logging such data as much as possible, though some fingerprint information is collected in order to prompt users for email authorization when they attempt to download their encrypted wallet file (login) on a new machine.**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
 
@@ -151,9 +151,9 @@ Blockchain's responses are listed in bold.
 
 **No, all data is sent through the same server.**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **Our wallet does not currently support accounts or identities.**
 
 ##Question Scores##

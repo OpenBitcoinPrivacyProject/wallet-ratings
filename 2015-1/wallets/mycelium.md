@@ -5,11 +5,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
     <dt>Rank</dt>
     <dd></dd>
     <dt>Name</dt>
-    <dd></dd>
+    <dd>Mycelium</dd>
     <dt>Type</dt>
-    <dd></dd>
+    <dd>Wallet</dd>
     <dt>Version</dt>
-    <dd></dd>
+    <dd>2.2.0 (android)</dd>
     <dt>Score</dt>
     <dd>
         <dl>
@@ -104,21 +104,21 @@ Mycelium's responses are listed in bold.
 
   * Is it possible to operate the dedicated servers in a manner which correlates:
     * A user’s receiving or change address to another receiving or change address in the same wallet
-    
+
 **Not for spending, since all signing is done on the wallet, and address information is not tracked. We can only correlate addresses where more than one is used for inputs, same as anyone else can by looking at transactions on the blockchain. However, for balance lookups yes, since we don't have a good way to anonymize that yet (bloom filters aren't a good solution either), but we don't keep logs of balance lookups**
-    
+
     * Any of the above with a public IP address
-    
+
 **If connecting through clearweb, it's possible, but we don't log IP addresses either. And since we also added full support for Tor, users can completely hide their IP addresses if they want to.**
-    
+
     * Any of the above with a registered account 
-    
+
 **There are no registered accounts in our app, or any identifiable information besides addresses**
-    
+
     * Any of the above with a persistent software or hardware fingerprint
-    
+
 **No**
-    
+
 7: If your application obtains balance information by uploading a filter to network peers:
   * Are filters ever updated in a manner that allows the peer to correlate the old and new filter with the same connection?
 
@@ -128,9 +128,9 @@ Mycelium's responses are listed in bold.
 
 **No, all incoming and outgoing transaction information is broadcast through our servers, though that limits such tracking to just knowing that the user is a Mycelium user.**
 
-9: Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  * Does your application take positive steps to route outgoing transactions through different path to the network than the path via which it receives balance and incoming transaction information?
-  
+9: If your application supports multiple accounts/identities:
+  * Does your application take positive steps to route balance, incoming and outgoing transaction information through different network paths for each account/identity?
+
 **No, all balance information and signed transactions go through our server**
 
 ##Question Scores##
