@@ -29,11 +29,11 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Darkwallet is the first Bitcoin wallet explicitly devoted to privacy as a primary design goal, created by Amir Taaki and Cody Wilson. Darkwallet in the only wallet in our group which includes automatic CoinJoin mixing and ECDH Stealth Addresses. Another notable feature in Darkwallet is an automatic P2P network for messaging between users.
+Dark Wallet is the first Bitcoin wallet explicitly devoted to privacy as a primary design goal, created by Amir Taaki and Cody Wilson. Dark Wallet in the only wallet we’ve considered so far which includes automatic CoinJoin mixing and ECDH Stealth Addresses. Another notable feature in Dark Wallet is an automatic P2P network for messaging between users.
 
-As demonstrated by its score, Darkwallet is generally successful in its attempts to avoid privacy pitfalls. Some of the weaknesses include a reliance on third party Obelisk servers which have the ability to deanonymize users; theoretically users could run their own Obelisk server, but we consider this to be beyond the capabilities of most potential Darkwallet users. Another factor that makes Darkwallet weaker than it could be is its relatively small user base, which makes CoinJoin unlikely to find a partner for on-demand mixing.
+As demonstrated by its score, Dark Wallet is generally successful in its attempts to avoid privacy pitfalls. Some of the weaknesses include a reliance on third party Obelisk servers which have the ability to de-anonymize users; theoretically users could run their own Obelisk server, but this is beyond the capabilities of most potential Dark Wallet users. Another factor that makes Dark Wallet weaker than it could be is its relatively small user base, which makes CoinJoin unlikely to find a partner for on-demand mixing.
 
-The future of Darkwallet is currently uncertain, as it has not yet reached its 1.0 release milestone and no development activity has occurred since February 20th.
+The future of Dark Wallet is currently uncertain, as it has not yet reached its release milestone and no development activity has occurred since February 20th.
 
 ##Questionnaire Response ##
 
