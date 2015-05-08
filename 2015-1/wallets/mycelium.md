@@ -29,9 +29,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Mycelium Bitcoin Wallet is generally considered the leading Android wallet throughout 2014 and in to 2015. In terms of privacy features, Mycelium implements HD wallets based on BIP44, including multiple account support, and encourages good behavior by not encouraging address reuse by default. Mycelium is notable for including Local Trader, a built-in P2P system for finding traders to exchange between local currencies and Bitcoin.
+Many long-time Bitcoin users have regarded Mycelium Bitcoin Wallet as the leading Android wallet throughout 2014 and in to 2015. In terms of privacy features, Mycelium implements HD wallets based on BIP44, including multiple account support, and does not encourage address reuse by default. Mycelium is notable for including Local Trader, a built-in P2P system for finding traders to exchange between local currencies and Bitcoin.
 
-Mycelium is the best performer of all mobile wallets in this round of rating, but its score suffers from the method via which the wallet obtains balance information. Mycelium wallet obtain their balance information from dedicated Mycelium servers instead of connecting to network peers. While this does provide substantial benefits in terms of performance and battery life, it means Mycelium is in a position collect identifying information about their users. While Mycelium has very good support for Tor in their wallet, connecting to Mycelium servers via Tor only partially mitigates this privacy weakness.
+Mycelium is the best performer of all mobile wallets in this round of rating by OBPP, but its score suffers from the method via which the wallet obtains balance information. Mycelium wallets obtain their balance information from dedicated Mycelium servers instead of connecting to Bitcoin network peers. While this does provide substantial benefits in terms of performance and battery life, this practice places Mycelium in a position to collect identifying information about their users. While Mycelium has very good support for Tor in their wallet, connecting to Mycelium servers via Tor only partially mitigates this privacy weakness.
 
 ##Questionnaire Response ##
 
