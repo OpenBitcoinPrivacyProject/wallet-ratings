@@ -29,9 +29,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Armory is a high-end wallet with features suitable for an experienced user. In addition to its excellent security properties, Armory is good at preserving privacy as well. It connects to the network through Bitcoin Core, which means that the user stores the whole block chain on his own computer and does not need to query servers to learn his balance. It supports wallets with deterministic address generation and does not reuse addresses by default. It can easily be used with Tor. 
+Armory is a security-focused desktop wallet geared toward intermediate and advanced Bitcoin users. The open-source consumer wallet was first announced in early 2012. In recent months, the company has pivoted to focus their efforts primarily on enterprise customers. In addition to support for advanced security features such as offline signing and fragmented backups, Armory compares favorably to competing wallets in terms of privacy. Armory utilizes Bitcoin Core (bitcoind) to connect to the Bitcoin network. Consequently, Armory users enjoy the network privacy benefits of using a full node. The software is compatible with deterministic address generation and does not reuse addresses by default. Armory transactions broadcast through Bitcoin Core can often be routed through Tor with minor configuration in order to bolster network privacy.
 
-To improve its privacy, Armory must enable its users to use some mixing protocol such as CoinJoin and must be more careful about how it joins change addresses and about how it warns users when redemption of change addresses might compromise the user’s privacy. 
+Armory can improve privacy protections for users on the blockchain by supporting a mixing protocol such as CoinJoin. More careful handling of change outputs would also bolster Armory’s protections on the blockchain. Additionally, Armory can provide users more feedback through the GUI about potential privacy degradations that may occur — before the transactions are broadcast — and help steer the user through avoiding those pitfalls.
 
 ##Questionnaire Response ##
 

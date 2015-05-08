@@ -29,9 +29,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Bitcoin Wallet by Andreas Schildbach is the oldest mobile Bitcoin wallet in use. Development started in March of 2011. As the first mobile wallet to gain widespread use, it has served as a de facto reference implementation for Android bitcoin wallets.
+Andreas Schildbach’s Bitcoin Wallet is the oldest mobile Bitcoin wallet in use. Development for the Android-based wallet began in March of 2011. As the first mobile wallet to gain widespread use, it has served as a de facto reference implementation for Android bitcoin wallets.
 
-Bitcoin Wallet holds up well in terms of privacy features compared to more feature-rich wallets due to its simple interface. Bitcoin Wallet provides a simple interface that doesn’t allow users to perform privacy-reducing actions like reusing addresses for receiving funds. Multiple account support is Bitcoin Wallet’s single largest missing feature compared to its mobile competition.
+Bitcoin Wallet holds up well in terms of privacy features compared to more feature-rich wallets due to its simple interface. Bitcoin Wallet provides a simple interface that doesn’t allow users to perform privacy-reducing actions like reusing addresses for receiving funds. Multiple account support is Bitcoin Wallet’s single largest missing feature compared to its mobile competition. As with other mobile wallets, the software could improve user privacy protection by adopting practices such as mixing, use of shared secret addresses schemes like those based on Elliptic-Curve Diffie Hellman, and better handling of privacy when obtaining balance information or broadcasting transactions.
 
 ##Questionnaire Response##
 
