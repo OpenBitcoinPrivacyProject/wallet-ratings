@@ -29,9 +29,9 @@ Bitcoin Wallet Privacy Rating - Spring 2015
 
 ##Description##
 
-Electrum is a cross-platform lightweight wallet that has been under active development since November 2011. This wallet uses a deterministic seed to generate all keys, backed up by a 12-word string. Electrum 2.0 now implements BIP32 for this. It does not download the block chain, but instead connects to decentralized Electrum servers for transaction and balance data. These connections can easily be made through Tor, and the privacy-focused Linux distro Tails includes it by default. Electrum can also do two-factor authentication and maintain the online wallet for hardware wallets such as Trezor.
+Electrum is a cross-platform lightweight desktop wallet that has been under active development since November 2011. This wallet uses a deterministic seed to generate all keys, backed up by a 12-word string. Electrum 2.0 now implements BIP32 for this. Instead of downloading the entire blockchain, it connects to federated Electrum servers for transaction and balance data. These connections can easily be made through Tor; Electrum is the only Bitcoin wallet to be included by default with the privacy-focused Linux distro Tails. Electrum can also do two-factor authentication, and provides compatibility with hardware wallets such as Trezor.
 
-Because the Electrum client connects to servers for data, users sacrifice privacy and must rely on trust in the block chain information received. Servers can identify connections between addresses. While the GUI does not encourage address reuse in normal usage, it may confuse users' conceptual understanding of transactions and address balances.
+Because the Electrum client connects to servers for data, users sacrifice privacy and must rely on trust in the blockchain information received. Because of the networking model, Electrum servers can identify relationships between addresses through observing requests for balance information and transaction broadcasts. Electrum could be improved through the implementation of features also lacking in many other wallets, including ECDH address and mixing support, and by providing more detailed warnings to users before privacy violations take place.
 
 ##Questionnaire Response ##
 
