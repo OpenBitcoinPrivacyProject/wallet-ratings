@@ -186,7 +186,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 							<li>Is balance information obtained in a manner which avoids leaking the addresses in a wallet to network peers? (3.97%)
 								<ul>
 									<li>100: Full node - the wallet is part of, or works with, a full node under the user’s exclusive control</li>
-									<li>75: Carefully filtered - address filters are used, but filters are never updated and when a new one is require it is registered with a brand new peer</li>
+									<li>75: Carefully filtered - address filters are used, but filters are never updated and when a new one is required it is registered with a brand new peer</li>
 									<li>50: Unsafely filtered - address filters are used, and they are updated or reuse peers.</li>
 									<li>0: Unfiltered - Balance is obtained from a peer which can easily connect wallet addresses to a specific connection/wallet</li>
 								</ul>
