@@ -11,7 +11,7 @@ Each result is converted to a numeric score between 0 and 100 via the methods de
 When a test is not clearly applicable to a particular wallet because the wallet does not include the criteria tests, a score of either 0 or 100 is applied according to the following guidelines:
 
 * If the test checks for the absence of undesirable behavior, and the wallet avoids the undesirable behavior for reasons unanticipated by the authors of the criteria, the item is scored at 100.
-* If the test checks for the presense of desirable behavior, and the wallet achieves the same benefit of the desired behavior in methods unanticipated by the authors of the criteria, the item is scored at 100.
+* If the test checks for the presence of desirable behavior, and the wallet achieves the same benefit of the desired behavior in methods unanticipated by the authors of the criteria, the item is scored at 100.
 * In all other cases, the item is scored at 0.
 
 ## Boolean
