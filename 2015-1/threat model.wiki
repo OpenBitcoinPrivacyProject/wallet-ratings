@@ -66,11 +66,11 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |V B 1 a, V B 3 a
 |-
 |Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
-|Use seperate filters, provided to different peers, for each identity
+|Use separate filters, provided to different peers, for each identity
 |V C 2 a
 |-
 |Link different identities by observing that the same IP address is sending outgoing transactions associated with multiple identities
-|Use seperate routes for outgoing transactions associated with each identity
+|Use separate routes for outgoing transactions associated with each identity
 |V C 2 b
 |-
 |rowspan="2"|Transaction participant
@@ -103,7 +103,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
 |IV A 1 a
 |-
-|colspan="2"|The difficulty of setting up Tor on differnet operating systems may be a barrier to using wallet privacy features      
+|colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
 |V D 1 a
 |}
