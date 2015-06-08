@@ -37,18 +37,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |V C 3 a
 |-
-|rowspan="9"|Network peer
-|rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
-|Avoid leaking information about user behavior via observable network traffic
-|1 B 2 a
-|-
-|Avoid leaking information about recipients in transaction via an external network lookup
-|IV B 1 a
-|-
-|Link addresses to a user by observing their backup files
-|Use strictly local wallet backups, or encrypt remote wallet backups
-|II B 2 a
-|-
+|rowspan="5"|Protocol peer
 |Link addresses belonging to a single user by observing the pattern of their balance lookup requests (bloom/prefix filters or direct query)
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
 |V A 1 a, V A 3 a
@@ -61,10 +50,6 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Route outgoing transactions through a different route than through the peer which is providing balance information
 |V B 2 a
 |-
-|Link addresses to an IP address by observing the inputs of outgoing transactions sent by a client
-|Route outgoing transactions via a method that does not reveal the IP address of the sender
-|V B 1 a, V B 3 a
-|-
 |Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
 |V C 2 a
@@ -72,6 +57,18 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Link different identities by observing that the same IP address is sending outgoing transactions associated with multiple identities
 |Use separate routes for outgoing transactions associated with each identity
 |V C 2 b
+|-
+|rowspan="3"|Network peer
+|rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
+|Avoid leaking information about user behavior via observable network traffic
+|1 B 2 a
+|-
+|Avoid leaking information about recipients in transaction via an external network lookup
+|IV B 1 a
+|-
+|Link addresses to an IP address by observing the inputs of outgoing transactions sent by a client
+|Route outgoing transactions via a method that does not reveal the IP address of the sender
+|V B 1 a, V B 3 a
 |-
 |rowspan="2"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
@@ -88,9 +85,9 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Wallet provider
-|
-|
-|
+|Link addresses to a user by observing their backup files
+|Use strictly local wallet backups, or encrypt remote wallet backups
+|II B 2 a
 |-
 !colspan="4"|Meta Attacks
 |-
