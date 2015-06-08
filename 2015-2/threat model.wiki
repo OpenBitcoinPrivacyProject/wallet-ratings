@@ -87,6 +87,11 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |
 |-
+|Wallet provider
+|
+|
+|
+|-
 !colspan="4"|Meta Attacks
 |-
 !colspan="2"|Meta attack
