@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="7"|Blockchain observer
+|rowspan="8"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
@@ -37,7 +37,9 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |V C 3 a
 |-
-|rowspan="8"|Network peer
+|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed 
+|-
+|rowspan="9"|Network observer
 |Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
 |V A 1 a, V A 3 a
@@ -69,7 +71,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
 |V B 1 a, V B 3 a
 |-
+|A network observer can derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
+|-
 |rowspan="1"|Protocol peer
+|A protocol peer can derive the type of wallet used to create a transaction by actively probing the wallet to discover idiosyncrasies in the interactive behaviour of the wallet
 |-
 |rowspan="2"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
