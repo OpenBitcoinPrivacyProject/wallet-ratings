@@ -80,10 +80,12 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use mixing protocols which are secure against misbehavior by any participant
 |III A 2 b
 |-
-|Physical adversary
-|
-|
-|
+|rowspan="3"|Physical adversary
+|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
+|-
+|Detect the existence of a wallet on a device
+|-
+|Perform forensic analysis on a device, searching for sensitive information about a wallet 
 |-
 |Wallet provider
 |Link addresses to a user by observing their backup files
