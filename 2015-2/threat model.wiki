@@ -92,12 +92,20 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Perform forensic analysis on a device, searching for sensitive information about a wallet 
 |-
-|Wallet provider
+|rowspan="5"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
 |II B 2 a
 |-
-!colspan="4"|Meta Attacks
+|Require personally identifying information in order to use the wallet
+|-
+|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
+|-
+|Hide adverse privacy behavior from users by not releasing the source code to the wallet client
+|-
+|Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
+|-
+|!colspan="4"|Meta Attacks
 |-
 !colspan="2"|Meta attack
 !Countermeasure
