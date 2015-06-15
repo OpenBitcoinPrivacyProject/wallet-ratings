@@ -38,7 +38,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |V C 3 a
 |-
 |rowspan="8"|Network peer
-|Link addresses belonging to a single user by observing the pattern of their balance lookup requests (bloom/prefix filters or direct query)
+|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
 |V A 1 a, V A 3 a
 |-
