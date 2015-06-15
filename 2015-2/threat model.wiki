@@ -39,10 +39,16 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed 
 |-
-|rowspan="9"|Network observer
+|rowspan="10"|Network observer
 |Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
+|-
+|Link addresses belonging to a single user by observing source IP address for balance information queries
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
 |V A 1 a, V A 3 a
+|-
+|Link addresses belonging to a single user by observing source IP address for first relay of transactions
+|Route outgoing transactions via a method that does not reveal the IP address of the sender
+|V B 1 a, V B 3 a
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
@@ -66,10 +72,6 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Avoid leaking information about recipients in transaction via an external network lookup
 |IV B 1 a
-|-
-|Link addresses to an IP address by observing the inputs of outgoing transactions sent by a client
-|Route outgoing transactions via a method that does not reveal the IP address of the sender
-|V B 1 a, V B 3 a
 |-
 |A network observer can derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
 |-
