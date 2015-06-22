@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="9"|Blockchain observer
+|rowspan="10"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
@@ -37,11 +37,14 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |V C 3 a
 |-
-|rowspan="2"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
+|rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
 |
 |-
 |Avoid routinely creating outputs that are identifiable by their size or script
+|
+|-
+|Only create transactions which are compliant with BIP-62
 |
 |-
 |rowspan="13"|Network observer
@@ -163,7 +166,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
 |
 |-
-|!colspan="4"|Meta Attacks
+!colspan="4"|Meta Attacks
 |-
 !colspan="2"|Meta attack
 !Countermeasure
