@@ -103,12 +103,33 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use mixing protocols which are secure against misbehavior by any participant
 |III A 2 b
 |-
-|rowspan="3"|Physical adversary
-|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
+|rowspan="8"|Physical adversary
+|rowspan="2"|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
+|Provide a GUI that resembles an application other than a Bitcoin wallet
+|
 |-
-|Detect the existence of a wallet on a device
+|Unless the user explicitly requests for them to be displayed, do not display Bitcoin addresses in text or QR code form, or transaction hashes
+|
 |-
-|Perform forensic analysis on a device, searching for sensitive information about a wallet 
+|rowspan="4"|Detect the existence of a wallet on a device
+|Install the application is such a way that it is not detectible unless user performs a series of actions unlikely to be duplicated by an unauthorized user
+|
+|-
+|The user can easily erase the application and all its metadata if the decide to stop using the wallet or device
+|
+|-
+|If user loses physical control over the device, the wallet can be deleted via remote command
+|
+|-
+|Persistent wallet data is stored in a fashion that is not identifiable as belonging to a Bitcoin wallet
+|
+|-
+|rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet 
+|Encrypt all public key in the wallet
+|
+|-
+|Encrypt all non-keypair wallet metadata
+|
 |-
 |rowspan="5"|Wallet provider
 |Link addresses to a user by observing their backup files
