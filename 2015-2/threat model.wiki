@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="8"|Blockchain observer
+|rowspan="9"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
@@ -37,9 +37,14 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |V C 3 a
 |-
-|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed 
+|rowspan="2"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
+|Use standardized ordering of inputs and outputs
+|
 |-
-|rowspan="10"|Network observer
+|Avoid routinely creating outputs that are identifiable by their size or script
+|
+|-
+|rowspan="11"|Network observer
 |Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |-
 |Link addresses belonging to a single user by observing source IP address for balance information queries
@@ -73,10 +78,17 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid leaking information about recipients in transaction via an external network lookup
 |IV B 1 a
 |-
-|Derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
+|rowspan="2"|Derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
+|Avoid using one distinctive user agent when connecting to the Bitcoin network
+|
+|-
+|Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
+|
 |-
 |rowspan="1"|Protocol peer
 |Derive the type of wallet used to create a transaction by actively probing the wallet to discover idiosyncrasies in the interactive behaviour of the wallet
+|
+|
 |-
 |rowspan="3"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
