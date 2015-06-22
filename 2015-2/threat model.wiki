@@ -139,18 +139,29 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Encrypt all non-keypair wallet metadata
 |
 |-
-|rowspan="5"|Wallet provider
+|rowspan="6"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
 |II B 2 a
 |-
 |Require personally identifying information in order to use the wallet
+|Do not collect any personally identifying information from the user
+|
 |-
-|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
+|rowspan="2"|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
+|Only send debug information if users opt-in and are allowed to review the information before being sent
+|
+|-
+|Transmit usage and/or debug data via a method that does not reveal the IP address or identity of the user
+|
 |-
 |Hide adverse privacy behavior from users by not releasing the source code to the wallet client
+|Provide non-obfuscated source code and build tools needed for the users to compile their own versions
+|
 |-
 |Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
+|Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
+|
 |-
 |!colspan="4"|Meta Attacks
 |-
