@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="10"|Blockchain observer
+|rowspan="11"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
@@ -26,12 +26,15 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use multiple change outputs, and intentionally set the value of some outputs to values that resemble plausible spends
 |II A 2 c
 |-
-|rowspan="2"|Link outputs to a single entity based on them all being included as inputs in the same transaction
+|rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
 |III C 2 a
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
 |III A 1 a, III A 2 a, III A 3 a, III C 1 a
+|-
+|Use the same type of script used for change output as for the desired spend when creating transactions
+|
 |-
 |Link identities by observing that addresses associated with both identities are used as inputs in the same transaction
 |Avoid constructing transactions that contain inputs from more than one identity/account
