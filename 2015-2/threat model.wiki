@@ -45,7 +45,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Avoid routinely creating outputs that are identifiable by their size or script
-|
+|I B 2 a
 |-
 |Only create transactions which are compliant with BIP-62
 |
