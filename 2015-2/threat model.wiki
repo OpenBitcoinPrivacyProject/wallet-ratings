@@ -42,7 +42,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
-|
+|I C 1 b
 |-
 |Avoid routinely creating outputs that are identifiable by their size or script
 |I B 2 a
