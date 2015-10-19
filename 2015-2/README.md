@@ -1,5 +1,5 @@
-Bitcoin Wallet Privacy Ratings - Spring 2015
-============================================
+Bitcoin Wallet Privacy Ratings
+==============================
 
 ## Authors
 
