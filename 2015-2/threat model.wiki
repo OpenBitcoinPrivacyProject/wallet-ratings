@@ -28,7 +28,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
-|I C 1 d, III C 2 a
+|III C 2 a
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
 |I C 1 a, III A 1 a, III A 2 a, III A 3 a, III C 1 a
@@ -111,7 +111,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Create transactions which create small outputs to previously-used addresses which tempt wallet clients with poor utxo selection and/or lack of coin control to merge inputs.
 |Whenever an input is selected from a set of inputs with identicial scripts, always include all inputs from that set in the transaction
-|
+|I C 1 d
 |-
 |Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
 |Use mixing protocols which are secure against misbehavior by any participant
