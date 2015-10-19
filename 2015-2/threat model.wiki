@@ -188,7 +188,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
-|IV A 1 a
+|I A 1 b, IV A 1 a
 |-
 |colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
