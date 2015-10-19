@@ -14,7 +14,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="11"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
-|I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
+|I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, I B 3 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
@@ -177,10 +177,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
 |Use eternal backups
-|I B 3 a, II B 1 a, II B 3 a
+|II B 1 a, II B 3 a
 |-
 |Proactively inform users when backups require an update
-|I B 3 a, II B 1 a, II B 3 a
+|II B 1 a, II B 3 a
 |-
 |colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
 |Use mixing methods that do not allow for theft of funds
