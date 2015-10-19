@@ -48,7 +48,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Only create transactions which are compliant with BIP-62
-|
+|I C 1 e
 |-
 |rowspan="13"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
