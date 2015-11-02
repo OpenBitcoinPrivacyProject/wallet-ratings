@@ -28,10 +28,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
-|I C 2 a, III C 2 a
+|<ul><li> I C 2 a </li><li> III C 2 a </li></ul>
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
-|I C 1 a, I D 1 a
+|<ul><li> I C 1 a </li><li> I D 1 a </li></ul>
 |-
 |Use the same type of script used for change output as for the desired spend when creating transactions
 |I B 2 a
