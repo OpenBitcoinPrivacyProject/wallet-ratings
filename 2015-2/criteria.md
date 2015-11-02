@@ -5,7 +5,7 @@ This document outlines the OBPP criteria for rating the privacy strength of Bitc
 
 Our metrics are based on feature completeness and user experience. To evaluate user experience, we utilize a "minimum number of clicks to perform action" metric. This metric is easily standardized between wallets, minimizes subjectivity, and can be measured by a single tester.
 
-Each sub-category of privacy, such as "Change Address Generation," is broken down into between one and three areas of consideration, including usability, quality, and user feedback.
+Each sub-category of privacy, such as "Receiving address management," is broken down into between one and three areas of consideration, including usability, quality, and user feedback.
 
 ## Criteria
 
