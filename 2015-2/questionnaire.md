@@ -13,7 +13,6 @@ This questionnaire was sent to the developers of each of the wallets included in
 4. Does your application fully implement BIP 62?
 
 ### Mixing
-
 5. If your application supports mixing:
     a. What is the average number of participants a user can expect to interact with on a typical join transaction?
     b. Does your application attempt to construct join transactions in a way that avoids distinguishing them from non-join transactions?
