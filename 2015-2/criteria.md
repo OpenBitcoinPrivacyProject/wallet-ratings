@@ -117,7 +117,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 					<li>Quality:
 						<ol type="a">
 							<li>Is balance information obtained via one of the following methods? (2.008%)
-                                <ol type="i">
+                                <ol>
                                     <li>Without making queries to other network participants</li>
                                     <li>By making queries to other network participants that do not include multiple addresses in a specific connection context</li>
                                     <li>Via a method that matches a fraction of the blockchain beyond the addresses belonging to the wallet?</li>
@@ -170,7 +170,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
                             <li>Wallet avoids leaking information about recipients via an external identity lookup? (0.666%)</li>
                             <li>Does the wallet avoid observably connecting to a known endpoint, such as a wallet provider’s domain? (0.333%)</li>
                             <li>User agent: (0.333%)
-                                <ol type="i">
+                                <ol>
                                     <li>Does the wallet connect to the network using an unremarkable user agent, OR</li>
                                     <li>Does the wallet connect to the network using a random user agent, from a set of unremarkable user agents, for each connection?</li>
                                 </ol>
@@ -184,7 +184,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
                     <li>Usability:
                         <ol type="a">
                             <li>Compatible with latest version of Tails? (0.750%)
-                                <ol type="i">
+                                <ol>
                                     <li>100: Actually included in the Tails live cd</li>
                                     <li>75: Program and any dependencies are packaged into a single file which can be easily installed</li>
                                     <li>50: Installation is possible, but requires multiple complex steps</li>
