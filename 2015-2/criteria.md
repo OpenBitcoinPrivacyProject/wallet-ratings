@@ -53,7 +53,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
                     <li>Quality:
                         <ol type="a">
                             <li>When an outgoing transaction must merge inputs, and when mixing is not being used, is the transaction constructed in a way that plausibly resembles a mixing transaction? (1.893%)</li>
-                            <li>Are inputs and outputs ordered in a deterministic manner based on criteria other than the status of outputs as spends or change? (1.893%)</li>
+                            <li>Are inputs and outputs ordered in a deterministic manner based on criteria other than the status of outputs as spends or change (BIP 69)? (1.893%)</li>
                             <li>Does the wallet order inputs and outputs via a methodology common to multiple wallets? (0.473%)</li>
                             <li>When an input is selected which is part of a set of unspent outputs containing identical scripts (multiple deposits to a single address), is every output in the set added to the transaction? (0.946%)</li>
                             <li>Are all transactions created by the wallet compliant with BIP 62? (0.473%)</li>
