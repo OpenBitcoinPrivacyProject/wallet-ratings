@@ -15,11 +15,11 @@ This questionnaire was sent to the developers of each of the wallets included in
   ### Mixing
   
 5. If your application supports mixing:
-    a. What is the average number of participants a user can expect to interact with on a typical join transaction?
-    b. Does your application attempt to construct join transactions in a way that avoids distinguishing them from non-join transactions?
-    c. Does your application perform any kind of reversibility analysis on join transactions prior to presenting them to the user for confirmation?
-    d. Is the mixing technique employed secure against correlation attacks by the facilitator, such as a CoinJoin server or off-chain mixing service?
-    e. Is the mixing technique employed secure against theft of funds by the facilitator or its participants?
+    1. What is the average number of participants a user can expect to interact with on a typical join transaction?
+    2. Does your application attempt to construct join transactions in a way that avoids distinguishing them from non-join transactions?
+    3. Does your application perform any kind of reversibility analysis on join transactions prior to presenting them to the user for confirmation?
+    4. Is the mixing technique employed secure against correlation attacks by the facilitator, such as a CoinJoin server or off-chain mixing service?
+    5. Is the mixing technique employed secure against theft of funds by the facilitator or its participants?
   
   ### Donations
   
@@ -29,17 +29,17 @@ This questionnaire was sent to the developers of each of the wallets included in
   ### Balance Queries and Tx Broadcasting
   
 7. Please describe how your application obtains balance information in terms of how queries from the user’s device can reveal a connection between the addresses in their wallet.
-    a. Does the application keep a complete copy of the blockchain locally (full node)?
-    b. Does the user’s device provide a filter which matches some fraction of the blockchain while providing a false positive rate (bloom or prefix filters)?
+    1. Does the application keep a complete copy of the blockchain locally (full node)?
+    2. Does the user’s device provide a filter which matches some fraction of the blockchain while providing a false positive rate (bloom or prefix filters)?
         i. If so, approximately what fraction of the blockchain does the filter match in a default configuration (0% - 100%)?
-    c. Does the user’s device query all of their addresses at the same time?
-    d. Does the user’s device query addresses individually in a manner that does not allow the query responder to correlate queries for different addresses?
-    e. Can users opt to obtain their balance information via Tor (or equivalent means)?
+    3. Does the user’s device query all of their addresses at the same time?
+    4. Does the user’s device query addresses individually in a manner that does not allow the query responder to correlate queries for different addresses?
+    5. Can users opt to obtain their balance information via Tor (or equivalent means)?
 8. Does the applications route outgoing transactions independently from the manner in which it obtains balance information? Can users opt to have their transactions submitted to the Bitcoin network via Tor (or an equivalent means) independently of how they obtain their balance information?
 9. If your application supports multiple identities/wallets, does each one connect to the network as if it were completely independent from the other?
-    a. Does the application ever request balance information for addresses belonging to multiple identities in the same network query?
-    b. Are outgoing transactions from multiple identities routed independently of each other to the Bitcoin network?
-    c. When an identity/wallet is deleted, does the deletion process eliminate all evidence from the user's device that the wallet was previously installed?
+    1. Does the application ever request balance information for addresses belonging to multiple identities in the same network query?
+    2. Are outgoing transactions from multiple identities routed independently of each other to the Bitcoin network?
+    3. When an identity/wallet is deleted, does the deletion process eliminate all evidence from the user's device that the wallet was previously installed?
   
   ### Network Privacy
   
@@ -53,10 +53,10 @@ This questionnaire was sent to the developers of each of the wallets included in
 14. Does the application uninstall process for your application eliminate all evidence from the user's device that the application was previously installed? Does it also eliminate wallet data?
 15. Does your application use techniques such as steganography to store persistent wallet metadata in a form not identifiable as belong to a Bitcoin wallet application?
 16. Please describe the degree to which users can use passwords/PINs to protect their data:
-    a. Can the user set a password/PIN to protect their private keys?
-    b. Can the user set a password/PIN to protect their public keys and balance information?
-    c. Can the user set a password/PIN to encrypt other wallet metadata, such as address books and transaction notes?
-    d. Does the application use a single password/PIN to cover all protected data, or does it allow the use of multiple passwords/PINs?
+    1. Can the user set a password/PIN to protect their private keys?
+    2. Can the user set a password/PIN to protect their public keys and balance information?
+    3. Can the user set a password/PIN to encrypt other wallet metadata, such as address books and transaction notes?
+    4. Does the application use a single password/PIN to cover all protected data, or does it allow the use of multiple passwords/PINs?
   
   ### Custodianship
   
