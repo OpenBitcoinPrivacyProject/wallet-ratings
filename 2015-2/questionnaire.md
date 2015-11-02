@@ -31,7 +31,7 @@ This questionnaire was sent to the developers of each of the wallets included in
 7. Please describe how your application obtains balance information in terms of how queries from the user’s device can reveal a connection between the addresses in their wallet.
     1. Does the application keep a complete copy of the blockchain locally (full node)?
     2. Does the user’s device provide a filter which matches some fraction of the blockchain while providing a false positive rate (bloom or prefix filters)?
-        i. If so, approximately what fraction of the blockchain does the filter match in a default configuration (0% - 100%)?
+        1. If so, approximately what fraction of the blockchain does the filter match in a default configuration (0% - 100%)?
     3. Does the user’s device query all of their addresses at the same time?
     4. Does the user’s device query addresses individually in a manner that does not allow the query responder to correlate queries for different addresses?
     5. Can users opt to obtain their balance information via Tor (or equivalent means)?
