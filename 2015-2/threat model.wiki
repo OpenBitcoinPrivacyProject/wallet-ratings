@@ -14,7 +14,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="11"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
-|<ul><li> I A 1 a </li><li> I A 2 a </li><li> I A 2 b </li><li> I B 1 a </li><li> I B 3 a </li><li> I B 3 b </li><li> I C 2 a </li><li> I C 2 b </li><li> I C 2 c </li>
+|<ul><li> I A 1 a </li><li> I A 2 a </li><li> I A 2 b </li><li> I B 1 a </li><li> I B 3 a </li><li> I B 3 b </li><li> I C 2 a </li><li> I C 2 b </li><li> I C 2 c </li></ul>
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
