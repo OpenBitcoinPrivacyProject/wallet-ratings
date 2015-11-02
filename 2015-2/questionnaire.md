@@ -20,14 +20,14 @@ This questionnaire was sent to the developers of each of the wallets included in
     c. Does your application perform any kind of reversibility analysis on join transactions prior to presenting them to the user for confirmation?
     d. Is the mixing technique employed secure against correlation attacks by the facilitator, such as a CoinJoin server or off-chain mixing service?
     e. Is the mixing technique employed secure against theft of funds by the facilitator or its participants?
-    
-### Donations
-
+  
+  ### Donations
+  
 6. If your application has a fee or donation to the developers feature:
     a. What steps do you take to make the donations indistinguishable from regular spend in terms of output sizes and destination addresses?
-    
-### Balance Queries and Tx Broadcasting
-
+  
+  ### Balance Queries and Tx Broadcasting
+  
 7. Please describe how your application obtains balance information in terms of how queries from the user’s device can reveal a connection between the addresses in their wallet.
     a. Does the application keep a complete copy of the blockchain locally (full node)?
     b. Does the user’s device provide a filter which matches some fraction of the blockchain while providing a false positive rate (bloom or prefix filters)?
@@ -40,16 +40,16 @@ This questionnaire was sent to the developers of each of the wallets included in
     a. Does the application ever request balance information for addresses belonging to multiple identities in the same network query?
     b. Are outgoing transactions from multiple identities routed independently of each other to the Bitcoin network?
     c. When an identity/wallet is deleted, does the deletion process eliminate all evidence from the user's device that the wallet was previously installed?
-
-### Network Privacy
-
+  
+  ### Network Privacy
+  
 10. When a user performs a backup operation for their wallet, does this generate any automatic network activity, such as a web query or email?
 11. Does your application perform any lookup external to the user’s device related to identifying transaction senders or recipients?
 12. Does you application connect to known endpoints which would be visible to an ISP, such as your domain?
 13. If your application connects directly to nodes in the Bitcoin P2P network, does it either use an unremarkable user agent string (Bitcoin Core. BitcoinJ, etc), or randomize its user agent on each connection?
-
-### Physical Access
-
+  
+  ### Physical Access
+  
 14. Does the application uninstall process for your application eliminate all evidence from the user's device that the application was previously installed? Does it also eliminate wallet data?
 15. Does your application use techniques such as steganography to store persistent wallet metadata in a form not identifiable as belong to a Bitcoin wallet application?
 16. Please describe the degree to which users can use passwords/PINs to protect their data:
@@ -57,15 +57,15 @@ This questionnaire was sent to the developers of each of the wallets included in
     b. Can the user set a password/PIN to protect their public keys and balance information?
     c. Can the user set a password/PIN to encrypt other wallet metadata, such as address books and transaction notes?
     d. Does the application use a single password/PIN to cover all protected data, or does it allow the use of multiple passwords/PINs?
-
-### Custodianship
-
+  
+  ### Custodianship
+  
 17. Do you as a wallet provider ever have access to unencrypted copies of the user’s private keys, public keys, or any other wallet metadata which may be used to associate a user with their transactions or balances?
-
-### Telemetry Data
-
+  
+  ### Telemetry Data
+  
 18. If your application reports telemetry data, such as usage information or automatic crash reporting, does the user have the opportunity to review and approve all information transmitted before it is sent?
-
-### Source Code and Building
-
+  
+  ### Source Code and Building
+  
 19. Can a user of your application compile the application themselves in a manner that produces a binary version identical to the version you distribute (deterministic build system)?
