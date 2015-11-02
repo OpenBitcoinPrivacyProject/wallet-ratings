@@ -17,7 +17,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
 					<li>Usability:
 						<ol type="a">
 							<li>Number of clicks required to deviate from the default receiving functionality and generate a new non-ECDH receiving address for an existing wallet. (4.049%)</li>
-                            <li>Number of clicks required by user to generate a ECDH receiving address ([BIP 63](https://github.com/bitcoin/bips/blob/master/bip-0063.mediawiki) or [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki)\), from the default window/authenticated home page. (2.024%)</li>
+                            <li>Number of clicks required by user to generate a ECDH receiving address ( [BIP 63](https://github.com/bitcoin/bips/blob/master/bip-0063.mediawiki) or [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) ), from the default window/authenticated home page. (2.024%)</li>
                         </ol>
 					</li>
 					<li>Feedback:
