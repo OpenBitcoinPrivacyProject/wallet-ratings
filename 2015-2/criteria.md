@@ -107,7 +107,7 @@ Each sub-category of privacy, such as "Change Address Generation," is broken dow
 	</li>
 	<li><strong>Protection from Network Observers</strong>
 		<ol type="A">
-			<li><em>Balance information/em>
+			<li><em>Balance information</em>
 				<ol type="1">
 					<li>Usability:
 						<ol type="a">
