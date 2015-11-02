@@ -11,7 +11,6 @@ This questionnaire was sent to the developers of each of the wallets included in
 2. What algorithms does your application use for ordering inputs and outputs in a transaction? In particular, how do you handle the change output and do you take into account common practices of other wallet applications when determining ordering?
 3. Does your application minimise the harmful effects of address reuse by spending every spendable input (“sweeping”) from an address when a transaction is created?
 4. Does your application fully implement BIP 62?
-
 ### Mixing
 5. If your application supports mixing:
     a. What is the average number of participants a user can expect to interact with on a typical join transaction?
