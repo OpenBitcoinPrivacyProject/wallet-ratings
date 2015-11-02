@@ -17,7 +17,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
 					<li>Usability:
 						<ol type="a">
 							<li>Number of clicks required to deviate from the default receiving functionality and generate a new non-ECDH receiving address for an existing wallet. (4.049%)</li>
-                            <li>Number of clicks required by user to generate a ECDH receiving address ( [BIP 63](https://github.com/bitcoin/bips/blob/master/bip-0063.mediawiki) or [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki) ), from the default window/authenticated home page. (2.024%)</li>
+                            <li>Number of clicks required by user to generate a ECDH receiving address (BIP 63 or BIP 47), from the default window/authenticated home page. (2.024%)</li>
                         </ol>
 					</li>
 					<li>Feedback:
@@ -53,11 +53,11 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
                     <li>Quality:
                         <ol type="a">
                             <li>When an outgoing transaction must merge inputs, and when mixing is not being used, is the transaction constructed in a way that plausibly resembles a mixing transaction? (1.893%)</li>
-                            <li>Are inputs and outputs ordered in a deterministic manner based on criteria other than the status of outputs as spends or change ([BIP 69](https://github.com/bitcoin/bips/blob/master/bip-0069.mediawiki))? (1.893%)</li>
+                            <li>Are inputs and outputs ordered in a deterministic manner based on criteria other than the status of outputs as spends or change (BIP 69)? (1.893%)</li>
                             <li>Does the wallet order inputs and outputs via a methodology common to multiple wallets? (0.473%)</li>
                             <li>When an input is selected which is part of a set of unspent outputs containing identical scripts (multiple deposits to a single address), is every output in the set added to the transaction? (0.946%)</li>
-                            <li>Are all transactions created by the wallet compliant with [BIP 62](https://github.com/bitcoin/bips/blob/master/bip-0062.mediawiki)? (0.473%)</li>
-                            <li>Can the wallet send to ECDH addresses ([BIP 63](https://github.com/bitcoin/bips/blob/master/bip-0063.mediawiki) or [BIP 47](https://github.com/bitcoin/bips/blob/master/bip-0047.mediawiki)? (0.946%)</li>
+                            <li>Are all transactions created by the wallet compliant with BIP 62? (0.473%)</li>
+                            <li>Can the wallet send to ECDH addresses (BIP 63 or BIP 47)? (0.946%)</li>
                         </ol>
                     </li>
                     <li>Feedback:
