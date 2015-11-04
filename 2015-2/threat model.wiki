@@ -83,7 +83,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link different identities by observing that the same IP address is sending outgoing transactions associated with multiple identities
 |Use separate routes for outgoing transactions associated with each identity
-|V C 2 b
+|II C 1 b
 |-
 |rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
 |Avoid leaking information about user behavior via observable network traffic
