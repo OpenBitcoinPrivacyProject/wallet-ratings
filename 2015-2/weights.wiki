@@ -380,7 +380,7 @@ The final score for each question is the product of the three percentages listed
 |-
 |III A 3
 |a
-|100%
+|100.00%
 |-
 |rowspan="2"|III B 1
 |a
@@ -391,11 +391,11 @@ The final score for each question is the product of the three percentages listed
 |-
 |IV A 1
 |a
-|100%
+|100.00%
 |-
 |IV A 2
 |a
-|100%
+|100.00%
 |-
 |rowspan="4"|IV B 1
 |a
@@ -435,15 +435,15 @@ The final score for each question is the product of the three percentages listed
 |-
 |V A 2
 |a
-|100%
+|100.00%
 |-
 |V A 3
 |a
-|100%
+|100.00%
 |-
 |V B 1
 |a
-|100%
+|100.00%
 |-
 |rowspan="2"|V C 1
 |a
@@ -458,7 +458,7 @@ The final score for each question is the product of the three percentages listed
 |-
 |V D 1
 |a
-|100%
+|100.00%
 |-
 |rowspan="2"|V D 1
 |a
