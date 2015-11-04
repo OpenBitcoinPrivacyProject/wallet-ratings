@@ -87,7 +87,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
 |Avoid leaking information about user behavior via observable network traffic
-|1 B 2 a
+|II D 1 a
 |-
 |Avoid leaking information about recipients in transaction via an external network lookup
 |IV B 1 a
