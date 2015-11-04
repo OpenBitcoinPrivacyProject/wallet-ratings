@@ -67,7 +67,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link addresses belonging to a single user by observing source IP address for first relay of transactions
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
-|II B 1 a
+|II B 1 a <br/> II B 3 a
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
