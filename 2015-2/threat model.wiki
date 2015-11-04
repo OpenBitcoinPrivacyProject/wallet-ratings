@@ -38,7 +38,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link identities by observing that addresses associated with both identities are used as inputs in the same transaction
 |Avoid constructing transactions that contain inputs from more than one identity/account
-|III A 1 a
+|III A 1 a, III A 2 a
 |-
 |rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
