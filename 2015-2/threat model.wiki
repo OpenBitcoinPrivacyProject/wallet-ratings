@@ -94,7 +94,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2"|Derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
 |Avoid using one distinctive user agent when connecting to the Bitcoin network
-|
+|II D 1 d
 |-
 |Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
 |II D 1 c
