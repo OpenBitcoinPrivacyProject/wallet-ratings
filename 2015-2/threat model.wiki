@@ -148,7 +148,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="6"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
-|
+|V A 2 a
 |-
 |Require personally identifying information in order to use the wallet
 |Do not collect any personally identifying information from the user
