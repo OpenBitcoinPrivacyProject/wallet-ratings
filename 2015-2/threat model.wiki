@@ -28,7 +28,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
-|I C 2 a <br/> III C 2 a
+|I C 2 a
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
 |I C 1 a <br/> I D 1 a <br/> I D 2 a <br/> I D 2 b
@@ -38,7 +38,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link identities by observing that addresses associated with both identities are used as inputs in the same transaction
 |Avoid constructing transactions that contain inputs from more than one identity/account
-|V C 3 a
+|
 |-
 |rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
@@ -71,7 +71,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
-|V A 2 a
+|
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
@@ -107,7 +107,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="3"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
 |Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
-|III D 1 a, V C 1 a, V C 1 b
+|
 |-
 |Create transactions which create small outputs to previously-used addresses which tempt wallet clients with poor utxo selection and/or lack of coin control to merge inputs.
 |Whenever an input is selected from a set of inputs with identicial scripts, always include all inputs from that set in the transaction
@@ -192,5 +192,5 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
-|V D 1 a
+|
 |}
