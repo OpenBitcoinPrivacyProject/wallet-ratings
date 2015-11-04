@@ -177,7 +177,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
 |Use eternal backups
-|V A 1 a, V A 1 b
+|V A 1 a <br/> V A 1 b
 |-
 |Proactively inform users when backups require an update
 |V A 3 a
