@@ -156,7 +156,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2"|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
 |Only send debug information if users opt-in and are allowed to review the information before being sent
-|V C 1 a
+|V C 1 a <br/> V C 2 a
 |-
 |Transmit usage and/or debug data via a method that does not reveal the IP address or identity of the user
 |V C 1 b
