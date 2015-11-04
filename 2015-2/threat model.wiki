@@ -123,7 +123,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |IV A 1 a
 |-
 |Unless the user explicitly requests for them to be displayed, do not display Bitcoin addresses in text or QR code form, or transaction hashes
-|
+|IV A 2 a
 |-
 |rowspan="4"|Detect the existence of a wallet on a device
 |Install the application is such a way that it is not detectible unless user performs a series of actions unlikely to be duplicated by an unauthorized user
