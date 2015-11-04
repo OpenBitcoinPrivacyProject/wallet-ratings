@@ -133,7 +133,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |IV B 1 c <br/> IV B 1 d
 |-
 |If user loses physical control over the device, the wallet can be deleted via remote command
-|
+|IV B 2 a
 |-
 |Persistent wallet data is stored in a fashion that is not identifiable as belonging to a Bitcoin wallet
 |
