@@ -241,6 +241,7 @@ The final score for each question is the product of the three percentages listed
 |-
 |b
 |33.33%
+|-
 |rowspan="2"|I A 2
 |a
 |66.67%
@@ -262,6 +263,7 @@ The final score for each question is the product of the three percentages listed
 |-
 |b
 |33.33%
+|-
 |rowspan="6"|I C 1
 |a
 |28.57%
