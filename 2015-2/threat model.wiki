@@ -115,7 +115,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
 |Use mixing protocols which are secure against misbehavior by any participant
-|III A 2 b
+|I D 3 a
 |-
 |rowspan="8"|Physical adversary
 |rowspan="2"|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
