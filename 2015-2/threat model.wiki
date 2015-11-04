@@ -120,7 +120,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="8"|Physical adversary
 |rowspan="2"|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
 |Provide a GUI that resembles an application other than a Bitcoin wallet
-|
+|IV A 1 a
 |-
 |Unless the user explicitly requests for them to be displayed, do not display Bitcoin addresses in text or QR code form, or transaction hashes
 |
