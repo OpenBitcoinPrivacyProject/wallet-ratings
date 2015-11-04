@@ -75,7 +75,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
-|V B 2 a
+|II A 2 b
 |-
 |Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
