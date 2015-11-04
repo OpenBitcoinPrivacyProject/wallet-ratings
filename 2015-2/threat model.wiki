@@ -53,13 +53,13 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="13"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |Obtain balance information without making queries to other network participants OR
-|
+|II A 2 a
 |-
 |Only query one address at a time from a specific connection context OR
-|
+|II A 2 a
 |-
 |Query multiple addresses at once using a technique that returns false positives
-|
+|II A 2 a
 |-
 |Link addresses belonging to a single user by observing source IP address for balance information queries
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
