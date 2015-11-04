@@ -21,7 +21,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |II A 2 a
 |-
 |Select inputs such that the amount of change in the transaction is close to the size of the desired spend
-|II A 2 b
+|
 |-
 |Use multiple change outputs, and intentionally set the value of some outputs to values that resemble plausible spends
 |II A 2 c
@@ -71,11 +71,11 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
-|
+|II A 2 b
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
-|II A 2 b <br/> II B 2 a
+|II B 2 a
 |-
 |Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
