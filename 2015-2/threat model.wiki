@@ -14,7 +14,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="11"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
-|<ul><li> I A 1 a </li><li> I A 2 a </li><li> I A 2 b </li><li> I B 1 a </li><li> I B 3 a </li><li> I B 3 b </li><li> I C 2 a </li><li> I C 2 b </li><li> I C 2 c </li></ul>
+|I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
@@ -28,10 +28,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
-|<ul><li> I C 2 a </li><li> III C 2 a </li></ul>
+|I C 2 a <br/> III C 2 a
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
-|I C 1 a <br/> I D 1 a <br/> I D 2 a <br/> I D 2 b <br/>
+|I C 1 a <br/> I D 1 a <br/> I D 2 a <br/> I D 2 b
 |-
 |Use the same type of script used for change output as for the desired spend when creating transactions
 |I B 2 a
