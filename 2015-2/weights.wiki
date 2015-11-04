@@ -137,6 +137,7 @@ The final score for each question is the product of the three percentages listed
 |-
 |Quality
 |50.000%
+|-
 |rowspan="3"|II A
 |Usability
 |35.714%
