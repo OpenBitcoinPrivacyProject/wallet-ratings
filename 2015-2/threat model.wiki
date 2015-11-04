@@ -140,7 +140,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet 
 |Encrypt all public key in the wallet
-|
+|IV B 1 a
 |-
 |Encrypt all non-keypair wallet metadata
 |
