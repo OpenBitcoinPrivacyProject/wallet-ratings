@@ -159,7 +159,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |V C 1 a
 |-
 |Transmit usage and/or debug data via a method that does not reveal the IP address or identity of the user
-|
+|V C 1 b
 |-
 |Hide adverse privacy behavior from users by not releasing the source code to the wallet client
 |Provide non-obfuscated source code and build tools needed for the users to compile their own versions
