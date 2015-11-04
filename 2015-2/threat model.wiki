@@ -31,7 +31,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |<ul><li> I C 2 a </li><li> III C 2 a </li></ul>
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
-|<ul><li> I C 1 a </li><li> I D 1 a </li><li> I D 2 a </li><li> I D 2 b </li></ul>
+|I C 1 a <br/> I D 1 a <br/> I D 2 a <br/> I D 2 b <br/>
 |-
 |Use the same type of script used for change output as for the desired spend when creating transactions
 |I B 2 a
