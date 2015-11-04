@@ -127,7 +127,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="4"|Detect the existence of a wallet on a device
 |Install the application is such a way that it is not detectible unless user performs a series of actions unlikely to be duplicated by an unauthorized user
-|
+|IV B 2 b
 |-
 |The user can easily erase the application and all its metadata if the decide to stop using the wallet or device
 |IV B 1 c <br/> IV B 1 d <br/> IV B 2 c <br/> IV B 2 d
