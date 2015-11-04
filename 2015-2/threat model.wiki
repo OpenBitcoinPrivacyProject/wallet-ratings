@@ -18,7 +18,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
-|
+|I C 1 b
 |-
 |Select inputs such that the amount of change in the transaction is close to the size of the desired spend
 |
