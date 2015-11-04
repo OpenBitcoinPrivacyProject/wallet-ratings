@@ -143,7 +143,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |IV B 1 a
 |-
 |Encrypt all non-keypair wallet metadata
-|
+|IV B 1 b
 |-
 |rowspan="6"|Wallet provider
 |Link addresses to a user by observing their backup files
