@@ -17,60 +17,76 @@ The final score for each question is the product of the three percentages listed
 !Weight
 |-
 |I A
-|Receiving Address Generation
-|16.17%
+|Receiving address management
+|11.387%
 |-
 |I B
-|Receiving Address Backup
-|3.89%
+|Change address management
+|10.352%
+|-
+|I C
+|Transaction construction
+|12.422%
+|-
+|I D
+|Mixing
+|8.282%
+|-
+|I E
+|Recurring transactions
+|1.035%
 |-
 |II A
-|Change Address Generation
-|16.17
+|Balance information
+|7.496%
 |-
 |II B
-|Change Address Backup
-|3.89%
+|Outgoing transactions
+|5.997%
+|-
+|II C
+|Identity seperation
+|5.997%
+|-
+|II D
+|Network behavior
+|1.499%
+|-
+|II E
+|Operating system
+|0.750%
 |-
 |III A
-|Mixing
-|6.67%
+|Identity management
+|4.348%
 |-
 |III B
-|Address Reuse
-|3.89
-|-
-|III C
-|Input Merging
-|5.56%
-|-
-|III D
-|Identity Seperation
-|6.67%
+|Mixing
+|8.696%
 |-
 |IV A
-|ECDH Address Support
-|5.56%
+|GUI design
+|1.087%
 |-
 |IV B
-|Receiver Identity
-|5.56%
+|Data protection
+|3.261%
 |-
 |V A
-|Balance Information
-|11.11%
+|Backups
+|3.162%
 |-
 |V B
-|Outgoing Transaction Routing
-|5.56%
+|Personally identifying information
+|6.324%
 |-
 |V C
-|Identity Seperation
-|5.56%
+|Telemetry
+|3.162%
 |-
 |V D
-|Tails Support
-| 2.78%
+|Source code
+|4.743%
 |}
 
 {|
@@ -83,107 +99,132 @@ The final score for each question is the product of the three percentages listed
 |-
 |rowspan="2"|I A
 |Usability
-|53.33%
+|53.333%
 |-
 |Feedback
-|46.67%
+|46.667%
 |-
 |rowspan="3"|I B
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
+|-
+|rowspan="2"|I C
+|Quality
+|53.333%
+|-
+|Feedback
+|46.667%
+|-
+|rowspan="3"|I D
+|Usability
+|35.714%
+|-
+|Quality
+|35.714%
+|-
+|Feedback
+|28.571%
+|-
+|rowspan="2"|I E
+|Usability
+|50.000%
+|-
+|Quality
+|50.000%
 |-
 |rowspan="3"|II A
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
 |rowspan="3"|II B
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
+|-
+|rowspan="1"|II C
+|Quality
+|100.000%
+|-
+|rowspan="1"|II D
+|Quality
+|100.000%
+|-
+|rowspan="1"|II E
+|Usability
+|100.000%
 |-
 |rowspan="3"|III A
 |Usability
-|35.71%
+|35.71%4
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
-|III B
-|Feedback
-|100%
-|-
-|rowspan="2"|III C
+|rowspan="1"|III B
 |Quality
-|60%
+|100.000%
 |-
-|Feedback
-|40%
-|-
-|III D
-|Quality
-|100%
-|-
-|IV A
+|rowspan="2"|IV A
 |Usability
-|100%
+|50.000%
 |-
-|IV B
 |Quality
-|100%
+|50.000%
+|-
+|rowspan="2"|IV B
+|Usability
+|50.000%
+|-
+|Quality
+|50.000%
 |-
 |rowspan="3"|V A
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
-|rowspan="3"|V B
+|rowspan="1"|V B
+|Quality
+|100.000%
+|-
+|rowspan="2"|V C
 |Usability
-|35.71%
+|50.000%
 |-
 |Quality
-|35.71%
+|50.000%
 |-
-|Feedback
-|28.57%
-|-
-|rowspan="3"|V C
+|rowspan="2"|V D
 |Usability
-|35.71%
+|50.000%
 |-
 |Quality
-|35.71%
-|-
-|Feedback
-|28.57%
-|-
-|V D
-|Usability
-|100%
+|50.000%
 |}
 
 {|
@@ -194,147 +235,235 @@ The final score for each question is the product of the three percentages listed
 !Item
 !Weight
 |-
-|I A 1
-|a
-|100%
-|-
-|rowspan="2"|I A 2
-|a
-|40%
-|-
-|b
-|60%
-|-
-|I B 1
-|a
-|100%
-|-
-|I B 2
-|a
-|100%
-|-
-|1 B 3
-|a
-|100%
-|-
-|II A 1
-|a
-|100%
-|-
-|rowspan="3"|II A 2
-|a
-|50%
-|-
-|b
-|33.33%
-|-
-|c
-|16.67%
-|-
-|rowspan="2"|II A 3
-|a
-|40%
-|-
-|b
-|60%
-|-
-|II B 1
-|a
-|100%
-|-
-|II B 2
-|a
-|100%
-|-
-|II B 3
-|a
-|100%
-|-
-|III A 1
-|a
-|100%
-|-
-|rowspan="3"|III A 2
-|a
-|33.33%
-|-
-|b
-|33.33%
-|-
-|c
-|33.33%
-|-
-|III A 3
-|a
-|100%
-|-
-|III B 1
-|a
-|100%
-|-
-|III C 1
-|a
-|100%
-|-
-|III C 2
-|a
-|100%
-|-
-|III D 1
-|a
-|100%
-|-
-|IV A 1
-|a
-|100%
-|-
-|IV B 1
-|a
-|100%
-|-
-|V A 1
-|a
-|100%
-|-
-|V A 2
-|a
-|100%
-|-
-|V A 3
-|a
-|100%
-|-
-|V B 1
-|a
-|100%
-|-
-|V B 2
-|a
-|100%
-|-
-|V B 3
-|a
-|100%
-|-
-|rowspan="2"|V C 1
+|rowspan="2"|I A 1
 |a
 |66.67%
 |-
 |b
 |33.33%
 |-
-|rowspan="2"|V C 2
+|rowspan="2"|I A 2
 |a
-|50%
+|66.67%
 |-
 |b
-|50%
+|33.33%
 |-
-|V C 3
+|I B 1
 |a
-|100%
+|100.00%
+|-
+|I B 2
+|a
+|100.00%
+|-
+|rowspan="2"|I B 3
+|a
+|66.67%
+|-
+|b
+|33.33%
+|-
+|rowspan="6"|I C 1
+|a
+|28.57%
+|-
+|b
+|28.57%
+|-
+|c
+|7.14%
+|-
+|d
+|14.29%
+|-
+|e
+|7.14%
+|-
+|f
+|14.29%
+|-
+|rowspan="3"|I C 2
+|a
+|42.86%
+|-
+|b
+|28.57%
+|-
+|c
+|28.57%
+|-
+|rowspan="1"|I D 1
+|a
+|100.00%
+|-
+|rowspan="2"|I D 2
+|a
+|50.00%
+|-
+|b
+|50.00%
+|-
+|rowspan="1"|I D 3
+|a
+|100.00%
+|-
+|rowspan="1"|I E 1
+|a
+|100.00%
+|-
+|rowspan="1"|I E 2
+|a
+|100.00%
+|-
+|rowspan="1"|II A 1
+|a
+|100.00%
+|-
+|rowspan="2"|II A 2
+|a
+|75.00%
+|-
+|b
+|25.00%
+|-
+|rowspan="1"|II A 3
+|a
+|100.00%
+|-
+|II B 1
+|a
+|100.00%
+|-
+|II B 2
+|a
+|100.00%
+|-
+|II B 3
+|a
+|100.00%
+|-
+|rowspan="2"|II C 1
+|a
+|60.00%
+|-
+|b
+|40.00%
+|-
+|rowspan="4"|II D 1
+|a
+|11.11%
+|-
+|b
+|44.44%
+|-
+|c
+|22.22%
+|-
+|d
+|22.22%
+|-
+|II E 1
+|a
+|100.00%
+|-
+|rowspan="2"|III A 1
+|a
+|75.00%
+|-
+|b
+|25.00%
+|-
+|rowspan="1"|III A 2
+|a
+|100.00%
+|-
+|III A 3
+|a
+|100.00%
+|-
+|rowspan="2"|III B 1
+|a
+|50.00%
+|-
+|b
+|50.00%
+|-
+|IV A 1
+|a
+|100.00%
+|-
+|IV A 2
+|a
+|100.00%
+|-
+|rowspan="4"|IV B 1
+|a
+|25.00%
+|-
+|b
+|25.00%
+|-
+|c
+|25.00%
+|-
+|d
+|25.00%
+|-
+|rowspan="5"|IV B 2
+|a
+|20.00%
+|-
+|b
+|20.00%
+|-
+|c
+|20.00%
+|-
+|d
+|20.00%
+|-
+|e
+|20.00%
+|-
+|rowspan="2"|V A 1
+|a
+|33.33%
+|-
+|b
+|66.67%
+|-
+|V A 2
+|a
+|100.00%
+|-
+|V A 3
+|a
+|100.00%
+|-
+|V B 1
+|a
+|100.00%
+|-
+|rowspan="2"|V C 1
+|a
+|60.00%
+|-
+|b
+|40.00%
+|-
+|rowspan="1"|V C 2
+|a
+|100.00%
 |-
 |V D 1
 |a
-|100%
+|100.00%
+|-
+|rowspan="2"|V D 1
+|a
+|50.00%
+|-
+|b
+|50.00%
 |}

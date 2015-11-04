@@ -14,90 +14,90 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="11"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
-|I A 1 a, 1 A 2 a, 1 A 2 b, 1 B 1 a, II A 1 a, II A 3 a, II A 3 b, III B 1 a, V A 1 a
+|I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
-|II A 2 a
+|I C 1 b
 |-
 |Select inputs such that the amount of change in the transaction is close to the size of the desired spend
-|II A 2 b
+|
 |-
 |Use multiple change outputs, and intentionally set the value of some outputs to values that resemble plausible spends
-|II A 2 c
+|
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
-|III C 2 a
+|I C 2 a
 |-
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
-|III A 1 a, III A 2 a, III A 3 a, III C 1 a
+|I C 1 a <br/> I D 1 a <br/> I D 2 a <br/> I D 2 b
 |-
 |Use the same type of script used for change output as for the desired spend when creating transactions
-|
+|I B 2 a
 |-
 |Link identities by observing that addresses associated with both identities are used as inputs in the same transaction
 |Avoid constructing transactions that contain inputs from more than one identity/account
-|V C 3 a
+|III A 1 a <br/> III A 2 a <br/> III A 3 a
 |-
 |rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
-|
+|I C 1 b <br/> I C 1 c
 |-
 |Avoid routinely creating outputs that are identifiable by their size or script
-|
+|I E 1 a <br/> I E 2 a
 |-
 |Only create transactions which are compliant with BIP-62
-|
+|I C 1 e
 |-
 |rowspan="13"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |Obtain balance information without making queries to other network participants OR
-|
+|II A 2 a
 |-
 |Only query one address at a time from a specific connection context OR
-|
+|II A 2 a <br/> II C 1 a
 |-
 |Query multiple addresses at once using a technique that returns false positives
-|
+|II A 2 a <br/> II C 1 a
 |-
 |Link addresses belonging to a single user by observing source IP address for balance information queries
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
-|V A 1 a, V A 3 a
+|II A 1 a <br/> II A 3 a
 |-
 |Link addresses belonging to a single user by observing source IP address for first relay of transactions
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
-|V B 1 a, V B 3 a
+|II B 1 a <br/> II B 3 a
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
-|V A 2 a
+|II A 2 b
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
-|V B 2 a
+|II B 2 a
 |-
-|Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
+|Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
-|V C 2 a
+|II C 1 a
 |-
 |Link different identities by observing that the same IP address is sending outgoing transactions associated with multiple identities
 |Use separate routes for outgoing transactions associated with each identity
-|V C 2 b
+|II C 1 b
 |-
 |rowspan="2"|Temporally link transactions to a known IP address via side channel attacks based on wallet behavior
 |Avoid leaking information about user behavior via observable network traffic
-|1 B 2 a
+|II D 1 a
 |-
 |Avoid leaking information about recipients in transaction via an external network lookup
-|IV B 1 a
+|II D 1 b
 |-
 |rowspan="2"|Derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
 |Avoid using one distinctive user agent when connecting to the Bitcoin network
-|
+|II D 1 d
 |-
 |Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
-|
+|II D 1 c
 |-
 |rowspan="1"|Protocol peer
 |Derive the type of wallet used to create a transaction by actively probing the wallet to discover idiosyncrasies in the interactive behaviour of the wallet
@@ -107,67 +107,67 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="3"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
 |Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
-|III D 1 a, V C 1 a, V C 1 b
+|III A 1 a <br/> III A 1 b
 |-
 |Create transactions which create small outputs to previously-used addresses which tempt wallet clients with poor utxo selection and/or lack of coin control to merge inputs.
 |Whenever an input is selected from a set of inputs with identicial scripts, always include all inputs from that set in the transaction
-|
+|I C 1 d
 |-
 |Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
 |Use mixing protocols which are secure against misbehavior by any participant
-|III A 2 b
+|I D 3 a <br/> III B 1 a
 |-
 |rowspan="8"|Physical adversary
 |rowspan="2"|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
 |Provide a GUI that resembles an application other than a Bitcoin wallet
-|
+|IV A 1 a
 |-
 |Unless the user explicitly requests for them to be displayed, do not display Bitcoin addresses in text or QR code form, or transaction hashes
-|
+|IV A 2 a
 |-
 |rowspan="4"|Detect the existence of a wallet on a device
 |Install the application is such a way that it is not detectible unless user performs a series of actions unlikely to be duplicated by an unauthorized user
-|
+|IV B 2 b
 |-
 |The user can easily erase the application and all its metadata if the decide to stop using the wallet or device
-|
+|IV B 1 c <br/> IV B 1 d <br/> IV B 2 c <br/> IV B 2 d
 |-
 |If user loses physical control over the device, the wallet can be deleted via remote command
-|
+|IV B 2 a
 |-
 |Persistent wallet data is stored in a fashion that is not identifiable as belonging to a Bitcoin wallet
-|
+|IV B 2 e
 |-
 |rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet 
 |Encrypt all public key in the wallet
-|
+|IV B 1 a
 |-
 |Encrypt all non-keypair wallet metadata
-|
+|IV B 1 b
 |-
 |rowspan="6"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
-|II B 2 a
+|V A 2 a
 |-
 |Require personally identifying information in order to use the wallet
 |Do not collect any personally identifying information from the user
-|
+|V B 1 a
 |-
 |rowspan="2"|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
 |Only send debug information if users opt-in and are allowed to review the information before being sent
-|
+|V C 1 a <br/> V C 2 a
 |-
 |Transmit usage and/or debug data via a method that does not reveal the IP address or identity of the user
-|
+|V C 1 b
 |-
 |Hide adverse privacy behavior from users by not releasing the source code to the wallet client
 |Provide non-obfuscated source code and build tools needed for the users to compile their own versions
-|
+|V D 1 a <br/> V D 2 a
 |-
 |Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
-|
+|V D 2 b
 |-
 !colspan="4"|Meta Attacks
 |-
@@ -177,20 +177,20 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
 |Use eternal backups
-|I B 3 a, II B 1 a, II B 3 a
+|V A 1 a <br/> V A 1 b
 |-
 |Proactively inform users when backups require an update
-|I B 3 a, II B 1 a, II B 3 a
+|V A 3 a
 |-
 |colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
 |Use mixing methods that do not allow for theft of funds
-|III A 2 c
+|I D 2 a <br/> III B 1 b
 |-
 |colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
-|IV A 1 a
+|I A 1 b <br/> I C 1 f
 |-
 |colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
-|V D 1 a
+|II E 1 a
 |}
