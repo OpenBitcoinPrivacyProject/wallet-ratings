@@ -67,7 +67,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link addresses belonging to a single user by observing source IP address for first relay of transactions
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
-|V B 1 a, V B 3 a
+|II B 1 a
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
@@ -177,10 +177,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
 |Use eternal backups
-|II B 1 a, II B 3 a
+|
 |-
 |Proactively inform users when backups require an update
-|II B 1 a, II B 3 a
+|
 |-
 |colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
 |Use mixing methods that do not allow for theft of funds
