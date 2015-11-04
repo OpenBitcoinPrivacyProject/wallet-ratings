@@ -192,5 +192,5 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
-|
+|II E 1 a
 |}
