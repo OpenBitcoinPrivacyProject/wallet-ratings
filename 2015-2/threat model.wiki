@@ -107,7 +107,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="3"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
 |Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
-|III A 1 a
+|III A 1 a <br/> III A 1 b
 |-
 |Create transactions which create small outputs to previously-used addresses which tempt wallet clients with poor utxo selection and/or lack of coin control to merge inputs.
 |Whenever an input is selected from a set of inputs with identicial scripts, always include all inputs from that set in the transaction
