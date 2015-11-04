@@ -63,7 +63,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link addresses belonging to a single user by observing source IP address for balance information queries
 |Connect to the source of balance information in a manner that does not leak the IP address of the requestor
-|V A 1 a, V A 3 a
+|II A 1 a
 |-
 |Link addresses belonging to a single user by observing source IP address for first relay of transactions
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
