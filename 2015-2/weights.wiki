@@ -17,60 +17,76 @@ The final score for each question is the product of the three percentages listed
 !Weight
 |-
 |I A
-|Receiving Address Generation
-|16.17%
+|Receiving address management
+|11.387%
 |-
 |I B
-|Receiving Address Backup
-|3.89%
+|Change address management
+|10.352%
+|-
+|I C
+|Transaction construction
+|12.422%
+|-
+|I D
+|Mixing
+|8.282%
+|-
+|I E
+|Recurring transactions
+|1.035%
 |-
 |II A
-|Change Address Generation
-|16.17
+|Balance information
+|7.496%
 |-
 |II B
-|Change Address Backup
-|3.89%
+|Outgoing transactions
+|5.997%
+|-
+|II C
+|Identity seperation
+|5.997%
+|-
+|II D
+|Network behavior
+|1.499%
+|-
+|II E
+|Operating system
+|0.750%
 |-
 |III A
-|Mixing
-|6.67%
+|Identity management
+|4.348%
 |-
 |III B
-|Address Reuse
-|3.89
-|-
-|III C
-|Input Merging
-|5.56%
-|-
-|III D
-|Identity Seperation
-|6.67%
+|Mixing
+|8.696%
 |-
 |IV A
-|ECDH Address Support
-|5.56%
+|GUI design
+|1.087%
 |-
 |IV B
-|Receiver Identity
-|5.56%
+|Data protection
+|3.261%
 |-
 |V A
-|Balance Information
-|11.11%
+|Backups
+|3.162%
 |-
 |V B
-|Outgoing Transaction Routing
-|5.56%
+|Personally identifying information
+|6.324%
 |-
 |V C
-|Identity Seperation
-|5.56%
+|Telemetry
+|3.162%
 |-
 |V D
-|Tails Support
-| 2.78%
+|Source code
+|4.743%
 |}
 
 {|
