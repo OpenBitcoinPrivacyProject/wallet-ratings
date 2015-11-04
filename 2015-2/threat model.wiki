@@ -163,7 +163,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Hide adverse privacy behavior from users by not releasing the source code to the wallet client
 |Provide non-obfuscated source code and build tools needed for the users to compile their own versions
-|
+|V D 1 a <br/> V D 2 a
 |-
 |Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
