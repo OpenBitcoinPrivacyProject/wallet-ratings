@@ -152,7 +152,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Require personally identifying information in order to use the wallet
 |Do not collect any personally identifying information from the user
-|
+|V B 1 a
 |-
 |rowspan="2"|Cause the wallet to transmit usage and/or debug data back to the provider which can be used to correlate transactions to a particular user.
 |Only send debug information if users opt-in and are allowed to review the information before being sent
