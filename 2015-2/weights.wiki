@@ -99,107 +99,131 @@ The final score for each question is the product of the three percentages listed
 |-
 |rowspan="2"|I A
 |Usability
-|53.33%
+|53.333%
 |-
 |Feedback
-|46.67%
+|46.667%
 |-
 |rowspan="3"|I B
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
+|rowspan="2"|I C
+|Quality
+|53.333%
+|-
+|Feedback
+|46.667%
+|-
+|rowspan="3"|I D
+|Usability
+|35.714%
+|-
+|Quality
+|35.714%
+|-
+|Feedback
+|28.571%
+|-
+|rowspan="2"|I E
+|Usability
+|50.000%
+|-
+|Quality
+|50.000%
 |rowspan="3"|II A
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
 |rowspan="3"|II B
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
+|-
+|rowspan="1"|II C
+|Quality
+|100.000%
+|-
+|rowspan="1"|II D
+|Quality
+|100.000%
+|-
+|rowspan="1"|II E
+|Usability
+|100.000%
 |-
 |rowspan="3"|III A
 |Usability
-|35.71%
+|35.71%4
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
-|III B
-|Feedback
-|100%
-|-
-|rowspan="2"|III C
+|rowspan="1"|III B
 |Quality
-|60%
+|100.000%
 |-
-|Feedback
-|40%
-|-
-|III D
-|Quality
-|100%
-|-
-|IV A
+|rowspan="2"|IV A
 |Usability
-|100%
+|50.000%
 |-
-|IV B
 |Quality
-|100%
+|50.000%
+|-
+|rowspan="2"|IV B
+|Usability
+|50.000%
+|-
+|Quality
+|50.000%
 |-
 |rowspan="3"|V A
 |Usability
-|35.71%
+|35.714%
 |-
 |Quality
-|35.71%
+|35.714%
 |-
 |Feedback
-|28.57%
+|28.571%
 |-
-|rowspan="3"|V B
+|rowspan="1"|V B
+|Quality
+|100.000%
+|-
+|rowspan="2"|V C
 |Usability
-|35.71%
+|50.000%
 |-
 |Quality
-|35.71%
+|50.000%
 |-
-|Feedback
-|28.57%
-|-
-|rowspan="3"|V C
+|rowspan="2"|V D
 |Usability
-|35.71%
+|50.000%
 |-
 |Quality
-|35.71%
-|-
-|Feedback
-|28.57%
-|-
-|V D
-|Usability
-|100%
+|50.000%
 |}
 
 {|
