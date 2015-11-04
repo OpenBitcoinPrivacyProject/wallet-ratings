@@ -42,10 +42,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
 |Use standardized ordering of inputs and outputs
-|I C 1 b, I C 1 c
+|I C 1 b <br/> I C 1 c
 |-
 |Avoid routinely creating outputs that are identifiable by their size or script
-|I E 1 a, I E 2 a
+|I E 1 a <br/> I E 2 a
 |-
 |Only create transactions which are compliant with BIP-62
 |I C 1 e
@@ -75,7 +75,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
-|II A 2 b, II B 2 a
+|II A 2 b <br/> II B 2 a
 |-
 |Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
@@ -188,7 +188,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
-|I A 1 b, I C 1 f
+|I A 1 b <br/> I C 1 f
 |-
 |colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
 |Create wallets that are easily usable on operating systems with built-in Tor support
