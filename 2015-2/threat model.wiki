@@ -97,7 +97,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
-|
+|II D 1 c
 |-
 |rowspan="1"|Protocol peer
 |Derive the type of wallet used to create a transaction by actively probing the wallet to discover idiosyncrasies in the interactive behaviour of the wallet
