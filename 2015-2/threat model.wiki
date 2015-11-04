@@ -75,7 +75,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
 |Route outgoing transactions through a different route than through the peer which is providing balance information
-|II A 2 b
+|II A 2 b, II B 2 a
 |-
 |Link different identities based on a bloom/prefix filter that matches addresses associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
@@ -148,7 +148,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |rowspan="6"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
-|II B 2 a
+|
 |-
 |Require personally identifying information in order to use the wallet
 |Do not collect any personally identifying information from the user
