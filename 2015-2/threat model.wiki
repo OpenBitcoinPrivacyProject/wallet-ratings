@@ -184,7 +184,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
 |Use mixing methods that do not allow for theft of funds
-|I D 2 a
+|I D 2 a <br/> III B 1 b
 |-
 |colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
