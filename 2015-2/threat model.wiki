@@ -130,7 +130,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |The user can easily erase the application and all its metadata if the decide to stop using the wallet or device
-|IV B 1 c <br/> IV B 1 d
+|IV B 1 c <br/> IV B 1 d <br/> IV B 2 c <br/> IV B 2 d
 |-
 |If user loses physical control over the device, the wallet can be deleted via remote command
 |IV B 2 a
