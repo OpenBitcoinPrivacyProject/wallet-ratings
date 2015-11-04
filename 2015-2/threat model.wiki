@@ -180,7 +180,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |V A 1 a, V A 1 b
 |-
 |Proactively inform users when backups require an update
-|
+|V A 3 a
 |-
 |colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
 |Use mixing methods that do not allow for theft of funds
