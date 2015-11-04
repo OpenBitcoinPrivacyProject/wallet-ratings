@@ -167,7 +167,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
-|
+|V D 2 b
 |-
 !colspan="4"|Meta Attacks
 |-
