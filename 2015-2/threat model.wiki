@@ -136,7 +136,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |IV B 2 a
 |-
 |Persistent wallet data is stored in a fashion that is not identifiable as belonging to a Bitcoin wallet
-|
+|IV B 2 e
 |-
 |rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet 
 |Encrypt all public key in the wallet
