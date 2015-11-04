@@ -90,7 +90,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |II D 1 a
 |-
 |Avoid leaking information about recipients in transaction via an external network lookup
-|IV B 1 a
+|II D 1 b
 |-
 |rowspan="2"|Derive the type of wallet used to create a transaction by passively observing idiosyncrasies in the interactive behaviour of the wallet
 |Avoid using one distinctive user agent when connecting to the Bitcoin network
