@@ -31,16 +31,4 @@ This information is broken down into several documents:
 
 ## Credits
 
-The following individuals participated in the creation of the threat model and associated criteria for the 2015-1 rating exercise:
-
-* Chris Pacia
-* Justus Ranvier
-* Kristov Atlas
-* Samuel Patterson
-
-The following individuals participated in the wallet rating process:
-
-* Daniel Krawisz
-* Justus Ranvier
-* Kristov Atlas
-* Michael Goldstien
+For a list of contributors to this report, please download the report.
