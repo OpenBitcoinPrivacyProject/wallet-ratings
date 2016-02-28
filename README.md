@@ -1,5 +1,5 @@
-Bitcoin Wallet Privacy Ratings - Spring 2015
-============================================
+Bitcoin Wallet Privacy Ratings
+==============================
 
 ## Authors
 
@@ -17,6 +17,12 @@ This repository contains the source data for the OBPP wallet privacy rating proj
 
 ## Results
 
-* [1st Edition, April 2015](2015-1/README.md)
-  * [Results](2015-1/OBPP Bitcoin Wallet Privacy Rating Report - Spring 2015.pdf)
-* 2nd Edition (Coming soon)
+* *2nd Edition, Feburary 2016* (latest)
+  * [Results](report-02/OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - February 2016.pdf)
+* 1st Edition, April 2015 [archived](2015-1/README.md)
+  * [Results](report-01/OBPP Bitcoin Wallet Privacy Rating Report - Spring 2015.pdf)
+
+## Threat Model
+
+Our ratings are based on a comprehensive threat model of attacks on privacy. The latest version of our threat model, released with our 2nd edition report in Feburary 2016, is available here:
+[Second Edition Threat Model](report-02/threat model.wiki)

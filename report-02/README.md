@@ -3,7 +3,7 @@ Bitcoin Wallet Privacy Ratings
 
 ## Authors
 
-Open Bitcoin Privacy Project (OBPP) 2015
+Open Bitcoin Privacy Project (OBPP) 2016
 
 ## Contact
 
@@ -13,9 +13,13 @@ Open Bitcoin Privacy Project (OBPP) 2015
 
 ## Description
 
-The documents in this repository methodology and results of the Spring 2015 batch of OBPP wallet privacy rating project. 
+The documents in this repository methodology and results of the 2nd edition of the OBPP wallet privacy rating project.
 
 This information is broken down into several documents:
+
+### Report
+
+[Report in PDF format](OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - February 2016.pdf)
 
 ### Method
 
@@ -23,20 +27,7 @@ This information is broken down into several documents:
 1. [Criteria](criteria.md) describes the particular tests used to measure how well a wallet implements an identified countermeasure.
 1. [Methodology](methodology.md) descibes how the results of each test is converted into a numeric score
 1. [Weighting](weights.wiki) descibes how the relative importance of each test is determined.
-1. [Questionnaire](questionnaire.md) describes the information the OBPP requested from each rated wallet
-
-## Results
-
-* [Airbitz](wallets/airbitz.md)
-* [Armory](wallets/armory.md)
-* [Bitcoin Wallet](wallets/bitcoinwallet.md)
-* [Blockchain (Android)](wallets/blockchain-android.md)
-* [Blockchain (Web)](wallets/blockchain-web.md)
-* [Coinbase](wallets/coinbase.md)
-* [Darkwallet](wallets/darkwallet.md)
-* [Electrum](wallets/electrum.md)
-* [Multibit Classic](wallets/multibit.md)
-* [Mycelium](wallets/mycelium.md)
+1. [Questionnaire](questionnaire.md) describes the information the OBPP requested from each rated wallet provider
 
 ## Credits
 
