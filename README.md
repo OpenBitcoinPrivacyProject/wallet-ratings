@@ -17,10 +17,10 @@ This repository contains the source data for the OBPP wallet privacy rating proj
 
 ## Results
 
-* **2nd Edition, Feburary 2016** (latest)
-  * [Results](report-02/OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - February 2016.pdf)
-* 1st Edition, April 2015 [archived](2015-1/README.md)
-  * [Results](report-01/OBPP Bitcoin Wallet Privacy Rating Report - Spring 2015.pdf)
+* [**2nd Edition, Feburary 2016 data**](report-02/) (latest)
+  * [Report PDF](report-02/OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - February 2016.pdf)
+* 1st Edition, April 2015 [archived](report-01/)
+  * [Report PDF](report-01/OBPP Bitcoin Wallet Privacy Rating Report - Spring 2015.pdf)
 
 ## Threat Model
 
