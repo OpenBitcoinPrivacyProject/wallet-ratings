@@ -25,4 +25,5 @@ This repository contains the source data for the OBPP wallet privacy rating proj
 ## Threat Model
 
 Our ratings are based on a comprehensive threat model of attacks on privacy. The latest version of our threat model, released with our 2nd edition report in Feburary 2016, is available here:
+
 [Second Edition Threat Model](report-02/threat model.wiki)
