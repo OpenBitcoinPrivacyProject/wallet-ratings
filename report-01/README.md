@@ -13,7 +13,7 @@ Open Bitcoin Privacy Project (OBPP) 2015
 
 ## Description
 
-The documents in this repository methodology and results of the Spring 2015 batch of OBPP wallet privacy rating project. 
+The documents in this repository methodology and results of the Spring 2015 batch of OBPP wallet privacy rating project.
 
 This information is broken down into several documents:
 
@@ -37,6 +37,10 @@ This information is broken down into several documents:
 * [Electrum](wallets/electrum.md)
 * [Multibit Classic](wallets/multibit.md)
 * [Mycelium](wallets/mycelium.md)
+
+## Raw Data
+
+* [Calculation spreadsheet](https://docs.google.com/spreadsheets/d/1VMb6qL4cBJk5fq_IBEhv_3-MVvVXsjFdHUdwmcr9uhc)
 
 ## Credits
 
