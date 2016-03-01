@@ -1,4 +1,4 @@
-Bitcoin Wallet Privacy Ratings - Spring 2015
+Bitcoin Wallet Privacy Ratings - Edition 1
 ============================================
 
 ## Authors
@@ -13,9 +13,13 @@ Open Bitcoin Privacy Project (OBPP) 2015
 
 ## Description
 
-The documents in this repository methodology and results of the Spring 2015 batch of OBPP wallet privacy rating project. 
+The documents in this repository methodology and results of the Spring 2015 batch of OBPP wallet privacy rating project.
 
 This information is broken down into several documents:
+
+### Report
+
+[Report in PDF format](OBPP Bitcoin Wallet Privacy Rating Report - Spring 2015.pdf)
 
 ### Method
 
@@ -37,6 +41,10 @@ This information is broken down into several documents:
 * [Electrum](wallets/electrum.md)
 * [Multibit Classic](wallets/multibit.md)
 * [Mycelium](wallets/mycelium.md)
+
+## Raw Data
+
+* [Calculation spreadsheet](https://docs.google.com/spreadsheets/d/1VMb6qL4cBJk5fq_IBEhv_3-MVvVXsjFdHUdwmcr9uhc)
 
 ## Credits
 
