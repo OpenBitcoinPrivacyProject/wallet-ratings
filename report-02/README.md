@@ -1,5 +1,5 @@
-Bitcoin Wallet Privacy Ratings
-==============================
+Bitcoin Wallet Privacy Ratings - Edition 2
+==========================================
 
 ## Authors
 
@@ -28,6 +28,10 @@ This information is broken down into several documents:
 1. [Methodology](methodology.md) descibes how the results of each test is converted into a numeric score
 1. [Weighting](weights.wiki) descibes how the relative importance of each test is determined.
 1. [Questionnaire](questionnaire.md) describes the information the OBPP requested from each rated wallet provider
+
+## Raw Data
+
+* [Calculation spreadsheet](https://docs.google.com/spreadsheets/d/10fC_n4axB_VYgSVPkIWPlMHFuZkTFr_nh51jpv7FghI)
 
 ## Credits
 
