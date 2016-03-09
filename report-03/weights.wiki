@@ -1,0 +1,614 @@
+=Bitcoin Wallet Privacy Criteria Weighting=
+
+This document outlines the OBPP criteria rating method.
+
+==Weights==
+
+Weights are qualitative estimates of importance which are used to compare individual criteria and calculate a final score. The weight is an estimate of the severity of the attack prevented by each countermeasure.
+
+The weight for each criterion is derived using a four-step process:
+
+# Each attacker is assigned a score representing its relative importance compared to other attackers.
+# For each attacker, every category of attacks they can perform is assigned a score representing its relative importance compared to other categories.
+# Within each category, every sub-category (quality, usability, and feedback) is assigned a score representing its relative importance compared to other sub-categories in the same category.
+# When multiple questions cover the same sub-category, they are assigned a score representing its relative importance compared to other questions in the same sub-category.
+
+The final score for each question is the product of the four percentages listed above.
+
+==Acceptance Criteria==
+
+The final scores for every test item should reflect the following conditions:
+
+* Weights should reflect the number of attackers (many vs few) capable of performing an attack.
+* Weights should reflect the temporal window of opportunity (long vs short) for the attack.
+* Weights should reflect the success probability for the attack.
+* Weights should reflect the amount of information obtained by the attack.
+
+==Components==
+
+{|
+|-
+!colspan="3"|Attackers
+|-
+!Attacker
+!Name
+!Weight
+|-
+|I
+|Blockchain Observers
+|100
+|-
+|II
+|Network Observers
+|50
+|-
+|III
+|Transaction Participants
+|30
+|-
+|IV
+|Physical Adversaries
+|10
+|-
+|V
+|Wallet Providers
+|40
+|}
+
+{|
+|-
+!colspan="4"|Categories
+|-
+!Attacker
+!Category
+!Name
+!Weight
+|-
+|rowspan="5"|I
+|A
+|Receiving address management
+|110
+|-
+|B
+|Change address management
+|100
+|-
+|C
+|Transaction construction
+|120
+|-
+|D
+|Mixing
+|80
+|-
+|E
+|Recurring transactions
+|10
+|-
+|rowspan="5"|II
+|A
+|Balance information
+|100
+|-
+|B
+|Outgoing transactions
+|80
+|-
+|C
+|Identity seperation
+|80
+|-
+|D
+|Network behavior
+|20
+|-
+|E
+|Operating system
+|10
+|-
+|rowspan="2"|III
+|A
+|Identity management
+|50
+|-
+|B
+|Mixing
+|100
+|-
+|rowspan="2"|IV
+|A
+|GUI design
+|40
+|-
+|B
+|Data protection
+|120
+|-
+|rowspan="4"|V
+|A
+|Backups
+|50
+|-
+|B
+|Personally identifying information
+|100
+|-
+|C
+|Telemetry
+|50
+|-
+|D
+|Source code
+|75
+|}
+
+{|
+|-
+!colspan="5"|Subcategories
+|-
+!Attacker
+!Category
+!Subcategory
+!Type
+!Weight
+|-
+|rowspan="2"|I A
+|rowspan="2"|Receiving address management
+|1
+|Usability
+|8
+|-
+|2|
+|Feedback
+|7
+|-
+|rowspan="3"|I B
+|rowspan="3"|Change address management
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|rowspan="2"|I C
+|rowspan="2"|Transaction construction
+|1
+|Quality
+|8
+|-
+|2
+|Feedback
+|7
+|-
+|rowspan="3"|I D
+|rowspan="3"|Mixing
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|rowspan="2"|I E
+|rowspan="2"|Recurring transactions
+|1
+|Usability
+|1
+|-
+|2
+|Quality
+|1
+|-
+|rowspan="3"|II A
+|rowspan="3"|Balance information
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|rowspan="3"|II B
+|rowspan="3"|Outgoing transactions
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|II C
+|Identity seperation
+|1
+|Quality
+|1
+|-
+|II D
+|Network behavior
+|1
+|Quality
+|1
+|-
+|II E
+|Operating system
+|1
+|Usability
+|1
+|-
+|rowspan="3"|III A
+|rowspan="3"|Identity management
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|III B
+|Mixing
+|1
+|Quality
+|1
+|-
+|rowspan="2"|IV A
+|rowspan="2"|GUI design
+|1
+|Usability
+|1
+|-
+|2
+|Quality
+|1
+|-
+|rowspan="2"|IV B
+|rowspan="2"|Data protection
+|1
+|Usability
+|1
+|-
+|2
+|Quality
+|1
+|-
+|rowspan="3"|V A
+|rowspan="3"|Backups
+|1
+|Usability
+|5
+|-
+|2
+|Quality
+|5
+|-
+|3
+|Feedback
+|4
+|-
+|V B
+|Personally identifying information
+|1
+|Quality
+|1
+|-
+|rowspan="2"|V C
+|rowspan="2"|Telemetry
+|1
+|Usability
+|1
+|-
+|2
+|Quality
+|1
+|-
+|rowspan="2"|V D
+|rowspan="2"|Source code
+|1
+|Usability
+|1
+|-
+|2
+|Quality
+|1
+|}
+
+{|
+|-
+!colspan="4"|Questions
+|-
+!Category
+!Name
+!Item
+!Weight
+|-
+|rowspan="2"|I A 1
+|rowspan="2"|Receiving address management Usability
+|a)
+|2
+|-
+|b)
+|1
+|-
+|rowspan="2"|I A 2
+|rowspan="2"|Receiving address management Feedback
+|a)
+|2
+|-
+|b)
+|1
+|-
+|I B 1
+|Change address management Usability
+|a)
+|1
+|-
+|I B 2
+|Change address management Quality
+|a)
+|1
+|-
+|rowspan="2"|I B 3
+|rowspan="2"|Change address management Feedback
+|a)
+|2
+|-
+|b)
+|1
+|-
+|rowspan="6"|I C 1
+|rowspan="6"|Transaction construction Quality
+|a)
+|100
+|-
+|b)
+|100
+|-
+|c)
+|25
+|-
+|d)
+|50
+|-
+|e)
+|25
+|-
+|f)
+|50
+|-
+|rowspan="3"|I C 2
+|rowspan="3"|Transaction construction Feedback
+|a)
+|3
+|-
+|b)
+|2
+|-
+|c)
+|2
+|-
+|I D 1
+|Mixing Usability
+|a)
+|1
+|-
+|rowspan="2"|I D 2
+|rowspan="2"|Mixing Quality
+|a)
+|100
+|-
+|b)
+|100
+|-
+|I D 3
+|Mixing Feedback
+|a)
+|1
+|-
+|I E 1
+|Recurring transactions Usability
+|a)
+|1
+|-
+|I E 2
+|Recurring transactions Quality
+|a)
+|1
+|-
+|II A 1
+|Balance information Usability
+|a)
+|1
+|-
+|rowspan="2"|II A 2
+|rowspan="2"|Balance information Quality
+|a)
+|3
+|-
+|b)
+|1
+|-
+|II A 3
+|Balance information Feedback
+|a)
+|1
+|-
+|II B 1
+|Outgoing transactions Usability
+|a)
+|1
+|-
+|II B 2
+|Outgoing transactions Quality
+|a)
+|1
+|-
+|II B 3
+|Outgoing transactions Feedback
+|a)
+|1
+|-
+|rowspan="2"|II C 1
+|rowspan="2"|Identity seperation Quality
+|a)
+|3
+|-
+|b)
+|2
+|-
+|rowspan="4"|II D 1
+|rowspan="4"|Network behavior Quality
+|a)
+|1
+|-
+|b)
+|4
+|-
+|c)
+|2
+|-
+|d)
+|2
+|-
+|II E 1
+|Operating system Usability
+|a)
+|1
+|-
+|rowspan="2"|III A 1
+|rowspan="2"|Identity management Usability
+|a)
+|3
+|-
+|b)
+|1
+|-
+|III A 2
+|Identity management Quality
+|a)
+|1
+|-
+|III A 3
+|Identity management Feedback
+|a)
+|1
+|-
+|rowspan="2"|III B 1
+|rowspan="2"|Mixing Quality
+|a)
+|100
+|-
+|b)
+|100
+|-
+|IV A 1
+|GUI design Usability
+|a)
+|1
+|-
+|IV A 2
+|GUI design Quality
+|a)
+|1
+|-
+|rowspan="4"|IV B 1
+|rowspan="4"|Data protection Usability
+|a)
+|100
+|-
+|b)
+|100
+|-
+|c)
+|100
+|-
+|d)
+|100
+|-
+|rowspan="4"|IV B 2
+|rowspan="4"|Data protection Quality
+|a)
+|100
+|-
+|b)
+|100
+|-
+|c)
+|100
+|-
+|d)
+|100
+|-
+|rowspan="2"|V A 1
+|rowspan="2"|Backups Usability
+|a)
+|1
+|-
+|b)
+|2
+|-
+|V A 2
+|Backups Quality
+|a)
+|1
+|-
+|V A 3
+|Backups Feedback
+|a)
+|1
+|-
+|V B 1
+|Personally identifying information Quality
+|a)
+|1
+|-
+|rowspan="2"|V C 1
+|rowspan="2"|Telemetry Usability
+|a)
+|3
+|-
+|b)
+|2
+|-
+|V C 2
+|Telemetry Quality
+|a)
+|1
+|-
+|V D 1
+|Source code Usability
+|a)
+|1
+|-
+|rowspan="2"|V D 2
+|rowspan="2"|Source code Quality
+|a)
+|100
+|-
+|b)
+|100
+|}
