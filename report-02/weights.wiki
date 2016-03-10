@@ -549,8 +549,8 @@ The final scores for every test item should reflect the following conditions:
 |d)
 |100
 |-
-|rowspan="4"|IV B 2
-|rowspan="4"|Data protection Quality
+|rowspan="5"|IV B 2
+|rowspan="5"|Data protection Quality
 |a)
 |100
 |-
