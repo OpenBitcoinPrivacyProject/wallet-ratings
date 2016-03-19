@@ -19,7 +19,7 @@ This information is broken down into several documents:
 
 ### Report
 
-[Report in PDF format](OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - February 2016.pdf)
+[Report in PDF format](OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - March 2016.pdf)
 
 ### Method
 
