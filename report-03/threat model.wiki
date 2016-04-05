@@ -54,7 +54,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Sign transactions using techniques that do not reveal the number of signers or keys involved in producing the signature.
 |
 |-
-|rowspan="18"|Network observer
+|rowspan="19"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
 |Obtain balance information without making queries to other network participants OR
 |II A 2 a
@@ -120,6 +120,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Determine the change output of a transaction by observing different versions of it broadcast as part of an RBF process
+|
+|
+|-
+|Correlate transactions with out-of-band behavior by recording the time at which transactions enter the network
 |
 |
 |-
