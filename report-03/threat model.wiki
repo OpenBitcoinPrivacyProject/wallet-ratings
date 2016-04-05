@@ -127,7 +127,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Determine the change output of a transaction by observing different versions of it broadcast as part of an RBF process
-|
+|Avoid broadcasting more than one version of a transaction
 |
 |-
 |Correlate transactions with out-of-band behavior by recording the time at which transactions enter the network
