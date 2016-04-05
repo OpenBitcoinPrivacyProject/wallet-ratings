@@ -161,7 +161,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Monitor the past and future behavior of a user based on receiving payment instructions from that user (such as a master xpub) which leak enough information about how other senders have paid/will pay the same recipient to identify the relevant transactions.
-|
+|Avoid protocols for transferring payment instructions which leak information about transactions originating from entities other than the intended sender
 |
 |-
 |rowspan="8"|Physical adversary
