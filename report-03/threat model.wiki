@@ -59,8 +59,8 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |rowspan="19"|Network observer
-|rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
-|Obtain balance information without making queries to other network participants OR
+|rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
+|Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
 |-
 |Only query one address at a time from a specific connection context OR
@@ -69,8 +69,8 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Query multiple addresses at once using a technique that returns false positives
 |II A 2 a <br/> II C 1 a
 |-
-|Link addresses belonging to a single user by observing source IP address for balance information queries
-|Connect to the source of balance information in a manner that does not leak the IP address of the requestor
+|Link addresses belonging to a single user by observing source IP address for relevant blockchain data queries
+|Connect to the source of relevant blockchain data in a manner that does not leak the IP address of the requestor
 |II A 1 a <br/> II A 3 a
 |-
 |Link addresses belonging to a single user by observing source IP address for first relay of transactions
@@ -82,7 +82,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |II A 2 b
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
-|Route outgoing transactions through a different route than through the peer which is providing balance information
+|Route outgoing transactions through a different route than through the peer which is providing relevant blockchain data
 |II B 2 a
 |-
 |Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
