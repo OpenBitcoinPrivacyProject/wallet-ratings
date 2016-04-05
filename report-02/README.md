@@ -21,6 +21,12 @@ This information is broken down into several documents:
 
 [Report in PDF format](OBPP Bitcoin Wallet Privacy Rating Report 2nd Edition - March 2016.pdf)
 
+#### Errata
+
+Below is a list of corrections and changes made to the initial report:
+
+* The score for Bitcoin-Qt was adjusted upwards to account for false testing positives related to change address management.
+
 ### Method
 
 1. [Threat model](threat model.wiki) describes the attackers, attacks, and countermeasures used to develop the rating criteria
