@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="12"|Blockchain observer
+|rowspan="13"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
@@ -52,6 +52,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |Link related outputs and transactions by observing the m and n parameters of multisig transactions.
 |Sign transactions using techniques that do not reveal the number of signers or keys involved in producing the signature.
+|
+|-
+|Correlate transactions with out-of-band behavior by recording the time at which transactions are included in a block
+|
 |
 |-
 |rowspan="19"|Network observer
