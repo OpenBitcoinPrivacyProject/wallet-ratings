@@ -132,7 +132,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |
 |-
-|rowspan="4"|Transaction participant
+|rowspan="5"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
 |Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
 |III A 1 a <br/> III A 1 b
@@ -146,6 +146,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |I D 3 a <br/> III B 1 a
 |-
 |Require users to submit transactions and identification information to one or more another parties in order to complete the signing process.
+|
+|
+|-
+|Monitor the past and future behavior of a user based on receiving payment instructions from that user (such as a master xpub) which leak enough information about how other senders have paid/will pay the same recipient to identify the relevant transactions.
 |
 |
 |-
