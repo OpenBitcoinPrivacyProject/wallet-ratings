@@ -11,7 +11,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="11"|Blockchain observer
+|rowspan="13"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
@@ -40,7 +40,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |III A 1 a <br/> III A 2 a <br/> III A 3 a
 |-
-|rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed
+|rowspan="3"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed, such as input/output ordering, output or fee size, or script composition.
 |Use standardized ordering of inputs and outputs
 |I C 1 b <br/> I C 1 c
 |-
@@ -50,9 +50,17 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Only create transactions which are compliant with BIP-62
 |I C 1 e
 |-
-|rowspan="13"|Network observer
-|rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its balance information from the network
-|Obtain balance information without making queries to other network participants OR
+|Link related outputs and transactions by observing the m and n parameters of multisig transactions.
+|Sign transactions using techniques that do not reveal the number of signers or keys involved in producing the signature.
+|
+|-
+|Correlate transactions with out-of-band behavior by recording the time at which transactions are included in a block
+|
+|
+|-
+|rowspan="20"|Network observer
+|rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
+|Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
 |-
 |Only query one address at a time from a specific connection context OR
@@ -61,20 +69,23 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Query multiple addresses at once using a technique that returns false positives
 |II A 2 a <br/> II C 1 a
 |-
-|Link addresses belonging to a single user by observing source IP address for balance information queries
-|Connect to the source of balance information in a manner that does not leak the IP address of the requestor
+|Link addresses belonging to a single user by observing source IP address for relevant blockchain data queries
+|Connect to the source of relevant blockchain data in a manner that does not leak the IP address of the requestor
 |II A 1 a <br/> II A 3 a
 |-
-|Link addresses belonging to a single user by observing source IP address for first relay of transactions
+|rowspan="2"|Link addresses belonging to a single user by observing that multiple transactions enter the network from an origin point likely to belong to a single user.
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
 |II B 1 a <br/> II B 3 a
+|-
+|Broadcast outgoing transactions in a manner that causes them to appear to have a network origin distinct from previously-broadcast transactions.
+|
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
 |II A 2 b
 |-
 |Reduce the false positive rate of filters by comparing the transactions sent by a client with the filter they have sent
-|Route outgoing transactions through a different route than through the peer which is providing balance information
+|Route outgoing transactions through a different route than through the peer which is providing relevant blockchain data
 |II B 2 a
 |-
 |Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
@@ -99,12 +110,40 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
 |II D 1 c
 |-
-|rowspan="1"|Protocol peer
+|Temporally correlate activity of a specific wallet across different connection sessions by observing idiosyncric client wallet behavior which acts as a unique fingerprint.
+|
+|
+|-
+|Correlate an IP address to a likely transaction participant by monitoring for queries (to a block explorer, etc) about specific recent transactions.
+|
+|
+|-
+|Perform a transport-level MITM attack on a connection between the wallet and a source of server to obtain PII and/or insert malicious code into the communication between wallet and server
+|Pin the expected public key/certificate in the client to prevent successful MITM attacks.
+|
+|-
+|Identify an entity as a likely transaction participant by observing out-of-band notifications subsequent to a transaction generated by any participant and/or their wallet provider
+|
+|
+|-
+|Determine the change output of a transaction by observing different versions of it broadcast as part of an RBF process
+|
+|
+|-
+|Correlate transactions with out-of-band behavior by recording the time at which transactions enter the network
+|
+|
+|-
+|rowspan="2"|Protocol peer
 |Derive the type of wallet used to create a transaction by actively probing the wallet to discover idiosyncrasies in the interactive behaviour of the wallet
 |
 |
 |-
-|rowspan="3"|Transaction participant
+|Derive the type of wallet used to create a transaction by observing the first hop IP address.
+|
+|
+|-
+|rowspan="5"|Transaction participant
 |Collude with other transaction participants to infer a bitcoin user's behavior based on the flow of funds from one colluding entity, to the targeted user, to another colluding entity
 |Use multiple identities/accounts to allow funds associated with one transaction participant to be kept apart from funds associated with a different transaction participant
 |III A 1 a <br/> III A 1 b
@@ -116,6 +155,14 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
 |Use mixing protocols which are secure against misbehavior by any participant
 |I D 3 a <br/> III B 1 a
+|-
+|Require users to submit transactions and identification information to one or more another parties in order to complete the signing process.
+|
+|
+|-
+|Monitor the past and future behavior of a user based on receiving payment instructions from that user (such as a master xpub) which leak enough information about how other senders have paid/will pay the same recipient to identify the relevant transactions.
+|
+|
 |-
 |rowspan="8"|Physical adversary
 |rowspan="2"|Conduct physical surveillance, especially against mobile users, to get sensitive information from screen or contextually tie blockchain activity to visual activity
@@ -138,14 +185,14 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Persistent wallet data is stored in a fashion that is not identifiable as belonging to a Bitcoin wallet
 |IV B 2 e
 |-
-|rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet 
+|rowspan="2"|Perform forensic analysis on a device, searching for sensitive information about a wallet
 |Encrypt all public key in the wallet
 |IV B 1 a
 |-
 |Encrypt all non-keypair wallet metadata
 |IV B 1 b
 |-
-|rowspan="6"|Wallet provider
+|rowspan="7"|Wallet provider
 |Link addresses to a user by observing their backup files
 |Use strictly local wallet backups, or encrypt remote wallet backups
 |V A 2 a
@@ -169,6 +216,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
 |V D 2 b
 |-
+|Hide adverse privacy behavior from users by not disclosing or by misrepresenting privacy risks.
+|
+|
+|-
 !colspan="4"|Meta Attacks
 |-
 !colspan="2"|Meta attack
@@ -182,15 +233,15 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Proactively inform users when backups require an update
 |V A 3 a
 |-
-|colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing       
+|colspan="2"|Concern that mixing services can steal funds may give users an incentive to avoid mixing
 |Use mixing methods that do not allow for theft of funds
 |I D 2 a <br/> III B 1 b
 |-
-|colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address      
+|colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
 |I A 1 b <br/> I C 1 f
 |-
-|colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features      
+|colspan="2"|The difficulty of setting up Tor on different operating systems may be a barrier to using wallet privacy features
 |Create wallets that are easily usable on operating systems with built-in Tor support
 |II E 1 a
 |}
