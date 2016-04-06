@@ -58,7 +58,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |
 |-
-|rowspan="19"|Network observer
+|rowspan="20"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
 |Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
@@ -73,9 +73,12 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Connect to the source of relevant blockchain data in a manner that does not leak the IP address of the requestor
 |II A 1 a <br/> II A 3 a
 |-
-|Link addresses belonging to a single user by observing source IP address for first relay of transactions
+|rowspan="2"|Link addresses belonging to a single user by observing that multiple transactions enter the network from an origin point likely to belong to a single user.
 |Route outgoing transactions via a method that does not reveal the IP address of the sender
 |II B 1 a <br/> II B 3 a
+|-
+|Broadcast outgoing transactions in a manner that causes them to appear to have a network origin distinct from previously-broadcast transactions.
+|
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
