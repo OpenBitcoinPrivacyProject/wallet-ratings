@@ -25,6 +25,7 @@ The final scores for every test item should reflect the following conditions:
 * Weights should reflect the temporal window of opportunity (long vs short) for the attack.
 * Weights should reflect the success probability for the attack.
 * Weights should reflect the amount of information obtained by the attack.
+* Weights should reflect the effectiveness of a countermeasure against an attack.
 
 ==Components==
 
