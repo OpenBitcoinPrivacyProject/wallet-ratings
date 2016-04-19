@@ -98,7 +98,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
                     </li>
                     <li>Quality:
                         <ol type="a">
-                            <li>Does the wallet avoid creating recurring transactions of a known size or to a known address? (0.518%)</li>
+                            <li>Does the wallet avoid creating recurring transactions without outputs of a known value or to a known address? (0.518%)</li>
                         </ol>
                     </li>
                 </ol>
