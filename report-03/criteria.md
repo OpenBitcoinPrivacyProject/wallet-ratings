@@ -22,7 +22,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
 					</li>
 					<li>Feedback:
 						<ol type="a">
-							<li>Non-EDCH receiving addresses are hidden from the default view once they have been used? (3.543%)</li>
+							<li>Non-ECDH receiving addresses are hidden from the default view once they have been used? (3.543%)</li>
 							<li>Preemptively indicates a loss of privacy when user elects to receive funds at a previously-used non-ECDH address, or prohibits this operation entirely? (1.771%)</li>
 						</ol>
 					</li>
