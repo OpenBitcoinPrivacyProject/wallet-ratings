@@ -58,7 +58,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |
 |-
-|rowspan="20"|Network observer
+|rowspan="21"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
 |Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
@@ -114,8 +114,8 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |
 |-
-|Correlate an IP address to a likely transaction participant by monitoring for queries (to a block explorer, etc) about specific recent transactions.
-|
+|rowspan="1"|Correlate an IP address to a likely transaction participant by monitoring for queries (to a block explorer, etc) about specific recent transactions.
+|Avoid performing queries to third party services regarding specific transactions in a manner which reveals the IP address of the user
 |
 |-
 |Perform a transport-level MITM attack on a connection between the wallet and a source of server to obtain PII and/or insert malicious code into the communication between wallet and server
