@@ -149,7 +149,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |III A 1 a <br/> III A 1 b
 |-
 |Create transactions which create small outputs to previously-used addresses which tempt wallet clients with poor utxo selection and/or lack of coin control to merge inputs.
-|Whenever an input is selected from a set of inputs with identicial scripts, always include all inputs from that set in the transaction
+|Whenever an input is selected from a set of inputs with identical scripts, always include all inputs from that set in the transaction
 |I C 1 d
 |-
 |Defeat attempts by users to mix their coins by participating in mixing transactions and collecting information which can be used to map inputs to outputs in the mixing transaction.
@@ -173,7 +173,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |IV A 2 a
 |-
 |rowspan="4"|Detect the existence of a wallet on a device
-|Install the application is such a way that it is not detectible unless user performs a series of actions unlikely to be duplicated by an unauthorized user
+|Install the application is such a way that it is not detectable unless user performs a series of actions unlikely to be duplicated by an unauthorized user
 |IV B 2 b
 |-
 |The user can easily erase the application and all its metadata if the decide to stop using the wallet or device
@@ -212,7 +212,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Provide non-obfuscated source code and build tools needed for the users to compile their own versions
 |V D 1 a <br/> V D 2 a
 |-
-|Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differes from versions compiled from the public source code
+|Hide adverse privacy behavior from users by distributing binary versions of the wallet whose behavior differs from versions compiled from the public source code
 |Provide a deterministic build system that allows users to verify that the binary version they have received was compiled from the public source code
 |V D 2 b
 |-
