@@ -110,8 +110,8 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid using a non-Bitcoin network protocol that leaks information about the type of client in use
 |II D 1 c
 |-
-|Temporally correlate activity of a specific wallet across different connection sessions by observing idiosyncric client wallet behavior which acts as a unique fingerprint.
-|
+|Temporally correlate activity of a specific wallet across different connection sessions by observing idiosyncratic client wallet behavior which acts as a unique fingerprint.
+|Avoid communicating state-based information to other entities which could be used to uniquely identify the client.
 |
 |-
 |rowspan="1"|Correlate an IP address to a likely transaction participant by monitoring for queries (to a block explorer, etc) about specific recent transactions.
