@@ -163,7 +163,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |I D 3 a <br/> III B 1 a
 |-
 |Require users to submit transactions and identification information to one or more another parties in order to complete the signing process.
-|
+|Do not require users to provide information to one or more other parties in order to complete the signing process in a way that allows the other parties to identify the source or destination of the transaction.
 |
 |-
 |Monitor the past and future behavior of a user based on receiving payment instructions from that user (such as a master xpub) which leak enough information about how other senders have paid/will pay the same recipient to identify the relevant transactions.
