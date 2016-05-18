@@ -137,7 +137,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Correlate transactions with out-of-band behavior by recording the time at which transactions enter the network
-|
+|Introduce random delays before introducing new transactions to the network.
 |
 |-
 |rowspan="2"|Protocol peer
