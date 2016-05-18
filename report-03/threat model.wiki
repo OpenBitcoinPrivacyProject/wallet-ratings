@@ -175,7 +175,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Provide a GUI that resembles an application other than a Bitcoin wallet
 |IV A 1 a
 |-
-|Unless the user explicitly requests for them to be displayed, do not display Bitcoin addresses in text or QR code form, or transaction hashes
+|Before or when displaying it, warn users about the privacy consequences of sharing data that can allow parties who will not be participants in the relevant transactions to link them to the user.
 |IV A 2 a
 |-
 |rowspan="4"|Detect the existence of a wallet on a device
