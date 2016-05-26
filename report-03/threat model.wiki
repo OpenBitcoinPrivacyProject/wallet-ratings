@@ -146,7 +146,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Derive the type of wallet used to create a transaction by observing the first hop IP address.
-|
+|Broadcast outgoing transactions in a manner that is not easily correlated to the wallet provider.
 |
 |-
 |rowspan="5"|Transaction participant
