@@ -11,12 +11,12 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="15"|Blockchain observer
+|rowspan="19"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid address reuse
 |I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
 |-
-|rowspan="4"|Link outputs in a transaction to a single entity by detecting which output is a change output
+|rowspan="8"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
 |I C 1 b
 |-
@@ -27,6 +27,18 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |
 |-
 |Avoid address reuse
+|
+|-
+|Use standardized ordering of inputs and outputs
+|
+|-
+|Avoid routinely creating outputs that are identifiable by their size or script
+|
+|-
+|Only create transactions which are compliant with BIP-62
+|
+|-
+|Calculate fees using a method which is not recognizably unique to a particular client
 |
 |-
 |rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
