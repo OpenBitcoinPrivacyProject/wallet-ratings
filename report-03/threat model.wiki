@@ -61,7 +61,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Introduce random delays before introducing new transactions to the network.
 |
 |-
-|rowspan="21"|Network observer
+|rowspan="23"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
 |Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
@@ -81,6 +81,12 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |II B 1 a <br/> II B 3 a
 |-
 |Broadcast outgoing transactions in a manner that causes them to appear to have a network origin distinct from previously-broadcast transactions.
+|-
+|rowspan="2"|Link a transaction's input address(es) to a specific IP address by observing the first relay of a broadcasted transaction.
+|Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
+|
+|-
+|Route outgoing transactions via a method that does not reveal the IP address of the sender
 |
 |-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
