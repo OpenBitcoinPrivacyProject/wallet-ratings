@@ -43,7 +43,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |III A 1 a <br/> III A 2 a <br/> III A 3 a
 |-
-|rowspan="4"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed, such as input/output ordering, output or fee size, or script composition.
+|rowspan="4"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed, such as input/output ordering, output or fee size, number or size of inputs, or script composition.
 |Use standardized ordering of inputs and outputs
 |I C 1 b <br/> I C 1 c
 |-
