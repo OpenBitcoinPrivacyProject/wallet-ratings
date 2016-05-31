@@ -81,6 +81,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |II B 1 a <br/> II B 3 a
 |-
 |Broadcast outgoing transactions in a manner that causes them to appear to have a network origin distinct from previously-broadcast transactions.
+|
 |-
 |rowspan="2"|Link a transaction's input address(es) to a specific IP address by observing the first relay of a broadcasted transaction.
 |Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
