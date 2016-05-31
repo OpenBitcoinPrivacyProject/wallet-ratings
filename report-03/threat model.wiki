@@ -13,7 +13,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |-
 |rowspan="14"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
-|Avoid address reuse
+|Avoid reuse of non-ECDH addresses
 |I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
 |-
 |rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
@@ -232,7 +232,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse addresses due to fear of losing funds
+|rowspan="2" colspan="2"|Concern that wallet backups may become unexpectedly invalid may give users an incentive to reuse non-ECDH addresses due to fear of losing funds
 |Use eternal backups
 |V A 1 a <br/> V A 1 b
 |-
@@ -243,7 +243,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use mixing methods that do not allow for theft of funds
 |I D 2 a <br/> III B 1 b
 |-
-|colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one address
+|colspan="2"|Overhead involved with communicating unique deposit addresses to senders may give users an incentive to reuse one non-ECDH address
 |Use deposit addresses derived from a constant seed using ECDH (e.g. stealth addresses)
 |I A 1 b <br/> I C 1 f
 |-
