@@ -98,7 +98,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Route outgoing transactions through a different route than through the peer which is providing relevant blockchain data
 |II B 2 a
 |-
-|Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
+|Link different identities based on a bloom/prefix filter or other query that matches blockchain data associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
 |II C 1 a
 |-
