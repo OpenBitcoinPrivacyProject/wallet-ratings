@@ -63,8 +63,8 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
                     <li>Feedback:
                         <ol type="a">
                             <li>Outside of a mixing transaction, preemptively indicates a loss of privacy when merging inputs from different addresses in the same transaction? (2.484%)</li>
-                            <li>Warns user when sending to an address that the user has sent to before? (1.656%)</li>
-                            <li>Warns user when sending to an address that has received deposits from any source? (1.656%)</li>
+                            <li>Warns user when sending to a non-ECDH address that the user has sent to before? (1.656%)</li>
+                            <li>Warns user when sending to a non-ECDH address that has received deposits from any source? (1.656%)</li>
                         </ol>
                     </li>
                 </ol>
@@ -98,7 +98,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
                     </li>
                     <li>Quality:
                         <ol type="a">
-                            <li>Does the wallet avoid creating recurring transactions with outputs of a known value or to a known address? (0.518%)</li>
+                            <li>Does the wallet avoid creating recurring transactions with outputs of a known value or to a known non-ECDH address? (0.518%)</li>
                         </ol>
                     </li>
                 </ol>
@@ -242,7 +242,7 @@ Each sub-category of privacy, such as "Receiving address management," is broken 
 					</li>
                     <li>Quality:
                         <ol type="a">
-                            <li>Does the wallet display addresses or transaction hashes in any form prior to the user explicitly requesting to see them? (0.543%)</li>
+                            <li>Does the wallet display non-ECDH addresses or transaction hashes in any form prior to the user explicitly requesting to see them? (0.543%)</li>
                         </ol>
                     </li>
 				</ol>
