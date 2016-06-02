@@ -11,12 +11,12 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 !Countermeasure
 !Relevant Tests
 |-
-|rowspan="14"|Blockchain observer
+|rowspan="21"|Blockchain observer
 |Link transactions to a single entity based on all of them containing inputs with a common address
 |Avoid reuse of non-ECDH addresses
 |I A 1 a <br/> I A 2 a <br/> I A 2 b <br/> I B 1 a <br/> I B 3 a <br/> I B 3 b <br/> I C 2 a <br/> I C 2 b <br/> I C 2 c
 |-
-|rowspan="3"|Link outputs in a transaction to a single entity by detecting which output is a change output
+|rowspan="9"|Link outputs in a transaction to a single entity by detecting which output is a change output
 |Randomize the position of the change output(s) in the output list
 |I C 1 b
 |-
@@ -26,7 +26,25 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Use multiple change outputs, and intentionally set the value of some outputs to values that resemble plausible spends
 |
 |-
-|rowspan="3"|Link outputs to a single entity based on them all being included as inputs in the same transaction
+|Avoid address reuse
+|
+|-
+|Use standardized ordering of inputs and outputs
+|
+|-
+|Avoid routinely creating outputs that are identifiable by their size or script
+|
+|-
+|Only create transactions which are compliant with BIP-62
+|
+|-
+|Calculate fees using a method which is not recognizably unique to a particular client
+|
+|-
+|Create the transaction in such a way that provides multiple possible matching sets between inputs and the user's change output(s).
+|
+|-
+|rowspan="4"|Link outputs to a single entity based on them all being included as inputs in the same transaction
 |Avoid using inputs from different addresses in the same transaction
 |I C 2 a
 |-
@@ -40,7 +58,10 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Avoid constructing transactions that contain inputs from more than one identity/account
 |III A 1 a <br/> III A 2 a <br/> III A 3 a
 |-
-|rowspan="4"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed, such as input/output ordering, output or fee size, or script composition.
+|Create the transaction in such a way that provides multiple possible matching sets between inputs and the user's change output(s).
+|
+|-
+|rowspan="4"|A blockchain observer can derive the type of wallet used to create a transaction by observing idiosyncrasies in the manner in which the transaction was composed, such as input/output ordering, output or fee size, number or size of inputs, or script composition.
 |Use standardized ordering of inputs and outputs
 |I C 1 b <br/> I C 1 c
 |-
@@ -61,7 +82,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Introduce random delays before introducing new transactions to the network.
 |
 |-
-|rowspan="21"|Network observer
+|rowspan="23"|Network observer
 |rowspan="3"|Link addresses belonging to a single user by observing information leaked by the wallet in the process of obtaining its relevant blockchain data from the network
 |Obtain relevant blockchain data without making queries to other network participants OR
 |II A 2 a
@@ -83,6 +104,13 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Broadcast outgoing transactions in a manner that causes them to appear to have a network origin distinct from previously-broadcast transactions.
 |
 |-
+|rowspan="2"|Link a transaction's input address(es) to a specific IP address by observing the first relay of a broadcasted transaction.
+|Use mixing when sending transactions, and make non-mixed transactions resemble mixed transactions
+|
+|-
+|Route outgoing transactions via a method that does not reveal the IP address of the sender
+|
+|-
 |Reduce the false positive rate of filters by comparing how the filters received from a single client change over time
 |If a filter requires an update, send the new filter to a different peer than the peer which has the old filter
 |II A 2 b
@@ -91,7 +119,7 @@ This document outlines the OBPP threat model used to develop [[criteria.md|crite
 |Route outgoing transactions through a different route than through the peer which is providing relevant blockchain data
 |II B 2 a
 |-
-|Link different identities based on a bloom/prefix filter or other balance query that matches addresses associated with multiple identities
+|Link different identities based on a bloom/prefix filter or other query that matches blockchain data associated with multiple identities
 |Use separate filters, provided to different peers, for each identity
 |II C 1 a
 |-
