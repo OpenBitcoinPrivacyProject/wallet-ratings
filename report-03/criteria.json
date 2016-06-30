@@ -1,0 +1,956 @@
+{
+    "attackers":
+    [
+        {
+            "numeral": "I",
+            "name": "Blockchain Observer",
+            "weight": 100,
+            "categories":
+            [
+                {
+                    "numeral": "A",
+                    "name": "Receiving address management",
+                    "weight": 110,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type": "Usability",
+                            "weight": 8,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 2,
+                                    "description": "Number of clicks required to deviate from the default receiving functionality and generate a new non-ECDH receiving address for an existing wallet."
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 1,
+                                    "description": "Number of clicks required by user to generate a ECDH receiving address (BIP 63 or BIP 47), from the default window/authenticated home page."
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type": "Quality",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type": "Feedback",
+                            "weight": 7,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 2,
+                                    "description": "Non-EDCH receiving addresses are hidden from the default view once they have been used?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 1,
+                                    "description": "Preemptively indicates a loss of privacy when user elects to receive funds at a previously-used non-ECDH address, or prohibits this operation entirely?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "B",
+                    "name": "Change address management",
+                    "weight": 100,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks required to deviate from the default change functionality and receive change at a newly generated address."
+                                }
+
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet produce P2SH change addresses when one or more of the spend outputs in a transaction is P2SH?"
+                                }
+
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 2,
+                                    "description": "Change addresses are hidden from the normal receiving workflow by default to discourage using them as receiving addresses?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 1,
+                                    "description": "Preemptively indicates a loss of privacy when user elects to reuse change addresses as receiving addresses, or prohibits this operation entirely?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "C",
+                    "name": "Transaction construction",
+                    "weight": 120,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 8,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "When an outgoing transaction must merge inputs, and when mixing is not being used, is the transaction constructed in a way that plausibly resembles a mixing transaction?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Are inputs and outputs ordered in a deterministic manner based on criteria other than the status of outputs as spends or change?"
+                                },
+                                {
+                                    "numeral": "c",
+                                    "weight": 25,
+                                    "description": "Does the wallet order inputs and outputs via a methodology common to multiple wallets?"
+                                },
+                                {
+                                    "numeral": "d",
+                                    "weight": 50,
+                                    "description": "When an input is selected which is part of a set of unspent outputs containing identical scripts (multiple deposits to a single address), is every output in the set added to the transaction?"
+                                },
+                                {
+                                    "numeral": "e",
+                                    "weight": 25,
+                                    "description": "Are all transactions created by the wallet compliant with BIP 62?"
+                                },
+                                {
+                                    "numeral": "f",
+                                    "weight": 50,
+                                    "description": "Can the wallet send to ECDH addresses (BIP 63 or BIP 47)?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 7,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 3,
+                                    "description": "Outside of a mixing transaction, preemptively indicates a loss of privacy when merging inputs from different addresses in the same transaction?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 3,
+                                    "description": "Warns user when sending to an address that the user has sent to before?"
+                                },
+                                {
+                                    "numeral": "c",
+                                    "weight": 2,
+                                    "description": "Warns user when sending to an address that has received deposits from any source?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "D",
+                    "name": "Mixing",
+                    "weight": 80,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks required by user for inputs/outputs to be mixed with one or more other users"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "Average number of other users whose funds are mixed with yours when sending through a mixing process"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Are mixing transactions constructed in a manner that makes them indistinguishable from non-mixing transactions?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Warns the user when a proposed mix is easy to reverse?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "E",
+                    "name": "Recurring transactions",
+                    "weight": 10,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks to opt out of creating recurring transactions, such as for donations to the wallet provider"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet avoid creating recurring transactions of a known size or to a known address?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numeral": "II",
+            "name": "Network Observers",
+            "weight": 50,
+            "categories":
+            [
+                {
+                    "numeral": "A",
+                    "name": "Balance information",
+                    "weight": 100,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks required by user to to obtain balance information without leaking their machine identity over the network"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 3,
+                                    "description": "Is balance information obtained via one of the following methods? (1) Without making queries to other network participants (2) By making queries to other network participants that do not include multiple addresses in a specific connection context (3) Via a method that matches a fraction of the blockchain beyond the addresses belonging to the wallet?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 1,
+                                    "description": "If balance information is obtained via querying more than one address in a given query, is a separate connection context used for each unique query?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Client provides a visual indication if the balance information is not being obtained through an anonymizing network, including IP address information"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "B",
+                    "name": "Outgoing transaction",
+                    "weight": 80,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks required by user to route outgoing transactions through an anonymizing network"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Are outgoing transactions routed through a different entry point into the network than the source of balance information?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Client provides a visual indication if outgoing transactions are not being routed through an anonymizing network, including IP address information"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "C",
+                    "name": "Identity seperation",
+                    "weight": 80,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 3,
+                                    "description": "Avoids including addresses from multiple identity containers in the same balance query?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 2,
+                                    "description": "Avoids broadcasting outgoing transactions from different identity containers via the same connection context?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "D",
+                    "name": "Network behavior",
+                    "weight": 20,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the backup process avoid leaking information about wallet addresses (e.g. each time a new change address is created on-demand, an email backup is triggered immediately)?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 4,
+                                    "description": "Wallet avoids leaking information about recipients via an external identity lookup?"
+                                },
+                                {
+                                    "numeral": "c",
+                                    "weight": 2,
+                                    "description": "Does the wallet avoid observably connecting to a known endpoint, such as a wallet provider’s domain?"
+                                },
+                                {
+                                    "numeral": "d",
+                                    "weight": 2,
+                                    "description": "User agent: (1) Does the wallet connect to the network using an unremarkable user agent, OR (2) Does the wallet connect to the network using a random user agent, from a set of unremarkable user agents, for each connection?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "E",
+                    "name": "Operating system",
+                    "weight": 10,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Compatible with latest version of Tails? 100: Actually included in the Tails live cd 75: Program and any dependencies are packaged into a single file which can be easily installed 50: Installation is possible, but requires multiple complex steps 0: WIll not run on Tails"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numeral": "III",
+            "name": "Protocol Peer",
+            "weight": 0,
+            "categories":
+            [
+            ]
+        },
+        {
+            "numeral": "IV",
+            "name": "Transaction Participants",
+            "weight": 30,
+            "categories":
+            [
+                {
+                    "numeral": "A",
+                    "name": "Identity management",
+                    "weight": 50,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 3,
+                                    "description": "Number of clicks to create a new identity container from the home screen of an existing identity container"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 1,
+                                    "description": "Number of clicks to assign an imported private key into an identity container"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Avoids creating transactions which contain inputs from different identity containers, except optionally if the user has intentionally overridden this behavior?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Visually indicates when inputs from different identity containers are merged before the transaction is broadcast, or prohibits this operation entirely?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "B",
+                    "name": "Mixing",
+                    "weight": 100,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "Mixing is secure against correlation attacks by the facilitator"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Mixing is secure against theft of funds"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numeral": "V",
+            "name": "Physical Adversaries",
+            "weight": 10,
+            "categories":
+            [
+                {
+                    "numeral": "A",
+                    "name": "GUI design",
+                    "weight": 40,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks to configure the GUI to resemble a non-wallet application"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet display addresses or transaction hashes in any form prior to the user explicitly requesting to see them?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "B",
+                    "name": "Data protection",
+                    "weight": 120,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "Number of clicks to set an encryption password/PIN for wallet public keys (apart from that needed to encrypt private keys)"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Number of clicks to set an encryption password/PIN for non-keypair wallet metadata (apart from that needed to encrypt private keys)"
+                                },
+                                {
+                                    "numeral": "c",
+                                    "weight": 100,
+                                    "description": "Number of clicks needed to permanently and completely erase the wallet from a device"
+                                },
+                                {
+                                    "numeral": "d",
+                                    "weight": 100,
+                                    "description": "Number of clicks needed to permanently and completely remove the wallet application from a device"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "Can the wallet data be remotely deleted by the user in the event the device containing the wallet is lost or stolen?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Is the wallet application difficult to detect as being installed unless the user performs a series of actions unlikely to be duplicated by an unauthorized user?"
+                                },
+                                {
+                                    "numeral": "c",
+                                    "weight": 100,
+                                    "description": "Does the wallet application removal process eliminate all evidence that a wallet was previously installed?"
+                                },
+                                {
+                                    "numeral": "d",
+                                    "weight": 100,
+                                    "description": "Does the wallet deletion process eliminate all evidence that a wallet was previously installed?"
+                                },
+                                {
+                                    "numeral": "e",
+                                    "weight": 100,
+                                    "description": "Is persistent wallet metadata stored in a form not identifiable as belonging to a Bitcoin wallet?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "numeral": "VI",
+            "name": "Wallet Providers",
+            "weight": 40,
+            "categories":
+            [
+                {
+                    "numeral": "A",
+                    "name": "Backups",
+                    "weight": 50,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Number of clicks to create the first wallet backup"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 2,
+                                    "description": "Number of clicks needed to update an existing backup due to the creation of a new receiving or change address"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 5,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Backups can occur offline, or are encrypted client-side with data that only the user controls e.g. password?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 4,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Indicates a reduction in wallet safety when backups are stale, or uses eternal backups?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "B",
+                    "name": "Personally identifying information",
+                    "weight": 100,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet function without requiring the user to supply personally identifying information?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "C",
+                    "name": "Telemetry",
+                    "weight": 50,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 3,
+                                    "description": "Number of clicks needed to disable sending telemetry data to the wallet provider (usage statistics, automatic crash reporting, etc)"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 2,
+                                    "description": "Number of clicks needed to ensure telemetry data is sent to the wallet provider in a manner that does not reveal the IP address of the user?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet avoid transmitting telemetry data to the provider before the user has a chance to review the information being sent?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "numeral": "D",
+                    "name": "Source code",
+                    "weight": 75,
+                    "subcategories":
+                    [
+                        {
+                            "numeral": "1",
+                            "type":"Usability",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 1,
+                                    "description": "Does the wallet provider supply simple instructions for building a usable binary from the source code?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "2",
+                            "type":"Quality",
+                            "weight": 1,
+                            "criteria":
+                            [
+                                {
+                                    "numeral": "a",
+                                    "weight": 100,
+                                    "description": "Is non-obfuscated source code for the wallet application available for immediate inspection?"
+                                },
+                                {
+                                    "numeral": "b",
+                                    "weight": 100,
+                                    "description": "Can a user produce a compiled version of the application from the public source code that exactly matches the version distributed by the wallet provider?"
+                                }
+                            ]
+                        },
+                        {
+                            "numeral": "3",
+                            "type":"Feedback",
+                            "weight": 0,
+                            "criteria":
+                            [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
